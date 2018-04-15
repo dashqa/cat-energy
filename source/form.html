@@ -32,19 +32,28 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Форма для заполнения заявки</h1>
+    <h1 class="page-main__title">Подбор программы</h1>
     <section class="request">
       <p class="request__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form action="https://echo.htmlacademy.ru" method="get" class="request__form form">
+      <form action="https://echo.htmlacademy.ru" method="POST" class="request__form form">
         <div class="form__wrapper">
-          <div class="form__contact cat-contact">
-            <label for="cat-name" class="cat-contact__label">Имя:*</label>
-            <input type="text" id="cat-name" name="cat-name" class="cat-contact__input" placeholder="Барсик" pattern="^[a-zA-Z]+$">
-            <label for="cat-weight" class="cat-contact__label">Вес (кг):*</label>
-            <input type="text" id="cat-weight" name="cat-weight" class="cat-contact__input" placeholder="7" pattern="^[ 0-9]+$">
-            <label for="cat-age" class="cat-contact__label">Возраст (лет):</label>
-            <input type="text" id="cat-age" name="cat-age" class="cat-contact__input" placeholder="7" pattern="^[ 0-9]+$">
-          </div>
+          <fieldset class="form__contact cat-contact">
+            <legend class="cat-contact__title visually-hidden">Информация о вашем коте</legend>
+            <ul class="cat-contact__list">
+              <li class="cat-contact__item">
+                <label for="cat-name" class="cat-contact__label">Имя:*</label>
+                <input type="text" id="cat-name" name="cat-name" class="cat-contact__input" placeholder="Барсик" pattern="^[a-zA-Z]+$">
+              </li>
+              <li class="cat-contact__item">
+                <label for="cat-weight" class="cat-contact__label">Вес (кг):*</label>
+                <input type="text" id="cat-weight" name="cat-weight" class="cat-contact__input" placeholder="7" pattern="^[ 0-9]+$">
+              </li>
+              <li class="cat-contact__item">
+                <label for="cat-age" class="cat-contact__label">Возраст (лет):</label>
+                <input type="text" id="cat-age" name="cat-age" class="cat-contact__input" placeholder="7" pattern="^[ 0-9]+$">
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="form__radio-btn radio-btn">
             <legend class="radio-btn__title visually-hidden">Выберите программу</legend>
             <ul class="radio-btn__list">
@@ -63,16 +72,22 @@
             </ul>
           </fieldset>
           <h2 class="request__title">Контактные данные (владельца кота)</h2>
-          <div class="form__contact user-contact">
-            <label for="user-email" class="user-contact__label">E-mail:*</label>
-            <input type="email" id="user-email" name="user-name" class="user-contact__input" placeholder="kuklachev@gmail.com">
-            <label for="user-tel" class="user-contact__label">Телефон:*</label>
-            <input type="tel" id="user-tel" name="user-tel" class="user-contact__input" placeholder="8 (960) 900-60-90">
-          </div>
+          <fieldset class="form__contact user-contact">
+            <ul class="user-contact__list">
+              <li class="user-contact__item">
+                <label for="user-email" class="user-contact__label">E-mail:*</label>
+                <input type="email" id="user-email" name="user-name" class="user-contact__input" placeholder="kuklachev@gmail.com">
+              </li>
+              <li class="user-contact__item">
+                <label for="user-tel" class="user-contact__label">Телефон:*</label>
+                <input type="tel" id="user-tel" name="user-tel" class="user-contact__input" placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
           <h2 class="request__title">Комментарии</h2>
-          <div class="form__textarea user-msg">
+          <fieldset class="form__textarea user-msg">
             <textarea class="user-msg__textarea" name="user-msg" id="user-msg" cols="10" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
+          </fieldset>
           <h2 class="request__title">Дополнительно</h2>
           <fieldset class="form__checkbox-field checkbox-field">
             <legend class="checkbox-field__title visually-hidden">Выберите дополительную информацию</legend>
@@ -103,10 +118,9 @@
 
     </section>
     <section class="coordinates">
-      <h2 class="coordinates__title visually-hidden">Приглашение к сотрудничеству</h2>
       <div class="coordinates__wrapper">
         <div class="coordinates__contact contact">
-          <strong class="contact__subtitle">Приглашаем к сотрудничеству дилеров!</strong>
+          <h2 class="contact__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contact__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <img class="coordinates__map" src="#" width="#" height="#" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
@@ -137,7 +151,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">HTML Academy</span>
-        <a href="https://htmlacademy.ru" target="_blank" class="copyright__link"></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link"></a>
       </div>
     </div>
   </footer>
