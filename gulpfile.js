@@ -4,7 +4,6 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
-var gulpBemCss = require('gulp-bem-css');
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
@@ -26,17 +25,6 @@ gulp.task("serve", ["style"], function() {
     open: true,
     cors: true,
     ui: false
-  });
-
-gulp.task('html', () => {
-    return gulp.src('source/sass/*.html')
-      .pipe(gulpBemCss({
-        folder: 'source/sass/test', // Path for creating directories and stylesheet files.
-        extension: 'scss', // Extension of stylesheet files
-        elementSeparator: '__', // Element separator in class names
-        modifierSeparator: '--' // Modifier separator in class names
-      }))
-      .pipe(gulp.dest('dist'));
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
