@@ -4,17 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>Кэт энерджи: Подбор программы </title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__icon" src="#" width="#" height="#" alt="Логотип Кэт энерджи">
-        <img class="page-header__text-icon" src="#" width="#" height="#" alt="Логотип Кэт энерджи">
+        <img class="page-header__icon" src="../img/logo-mobile.svg" width="192" height="38" alt="Логотип Кэт энерджи">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="main-nav__burger"></span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -33,9 +35,9 @@
   </header>
   <main class="page-main">
     <h1 class="page-main__title">Подбор программы</h1>
-    <section class="request">
-      <p class="request__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form action="https://echo.htmlacademy.ru" method="POST" class="request__form form">
+    <section class="form">
+      <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form action="https://echo.htmlacademy.ru" method="POST">
         <div class="form__wrapper">
           <fieldset class="form__contact">
             <legend class="form__title visually-hidden">Информация о вашем коте</legend>
@@ -63,7 +65,7 @@
               </li>
               <li class="form__item">
                 <input type="radio" name="radio-group" id="filter-weightgain" class="form__input">
-                <label for="filter-weightgain" class="form-label">Набор массы</label>
+                <label for="filter-weightgain" class="form__label">Набор массы</label>
               </li>
               <li class="form__item">
                 <input type="radio" name="radio-group" id="filter-needhelp" class="form__input">
@@ -71,7 +73,7 @@
               </li>
             </ul>
           </fieldset>
-          <h2 class="request__title">Контактные данные (владельца кота)</h2>
+          <h2 class="form__title">Контактные данные (владельца кота)</h2>
           <fieldset class="form__contact">
             <ul class="form__list">
               <li class="form__item">
@@ -84,11 +86,11 @@
               </li>
             </ul>
           </fieldset>
-          <h2 class="request__title">Комментарии</h2>
+          <h2 class="form__title">Комментарии</h2>
           <fieldset class="form__textarea">
-            <textarea class="form__textarea-msg" name="user-msg" id="user-msg" cols="10" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__textarea-msg" name="user-msg" id="user-msg" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <h2 class="request__title">Дополнительно</h2>
+          <h2 class="form__title">Дополнительно</h2>
           <fieldset class="form__checkbox-field">
             <legend class="form__title visually-hidden">Выберите дополительную информацию</legend>
             <ul class="form__list">
@@ -123,14 +125,14 @@
           <h2 class="coordinates__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="coordinates__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="coordinates__map" src="#" width="#" height="#" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <img class="coordinates__map" src="../img/bg-map-mobile@1x.png" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
-        <img class="page-footer__text-icon" src="#" width="#" height="#" alt="Логотип Кэт энерджи">
+        <img class="page-footer__text-icon" src="../img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
       <div class="page-footer__social">
         <ul class="page-footer__list">
@@ -152,8 +154,9 @@
         </ul>
       </div>
       <div class="page-footer__copyright">
-        <span class="page-footer__text">HTML Academy</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link"></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
+          <span class="page-footer__copy-text">HTML Academy</span>
+        <img src="../img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" class="page-footer__icon"></a>
       </div>
     </div>
   </footer>
