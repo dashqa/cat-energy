@@ -27,17 +27,4 @@
 
 .catalog__item {
   background-color: $bg-grey;
-/*
-  &--slim::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 51px;
-    background-color: $green;
-    background-image: url("../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 25px;
-  }
-  */
 }
