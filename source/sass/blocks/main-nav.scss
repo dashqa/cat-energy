@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
-  font-size: 20px;
   font-weight: 500;
+  font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
 }
@@ -12,9 +12,9 @@
   right: 10px;
   width: 24px;
   height: 18px;
+  padding: 15px;
   background-color: transparent;
   border: 0;
-  padding: 15px;
 }
 
 .main-nav__burger {
@@ -25,9 +25,9 @@
   background-color: $black;
 
   &::before {
+    content: "";
     position: absolute;
     top: 7px;
-    content: "";
     left: 0;
     width: 24px;
     height: 2px;
@@ -35,14 +35,14 @@
   }
 
   &::after {
+    content: "";
     position: absolute;
     top: -7px;
-    content: "";
     left: 0;
     width: 24px;
     height: 2px;
     background-color: $black;
-    }
+  }
 }
 
 .main-nav__list {
@@ -52,4 +52,3 @@
 .main-nav__link {
   color: $black;
 }
-

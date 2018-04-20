@@ -8,22 +8,16 @@
 }
 
 .product__subtitle {
-  font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $black;
-}
-.product__btn {
   font-size: 16px;
   line-height: 20px;
+  color: $black;
   text-transform: uppercase;
-  color: $white;
 }
 
 .product__table {
-  font-family: $arial;
   font-size: 12px;
   line-height: 16px;
+  font-family: $arial;
   color: $grey;
 }

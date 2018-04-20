@@ -11,10 +11,11 @@
 }
 
 .catalog__text {
-  @include indent-reset;
   font-size: 14px;
   font-family: $arial;
   color: $grey;
+
+  @include indent-reset;
 }
 
 .catalog__link {
@@ -26,16 +27,17 @@
 
 .catalog__item {
   background-color: $bg-grey;
-
+/*
   &--slim::before {
-    position: absolute;
     content: "";
+    position: absolute;
     width: 50px;
     height: 51px;
+    background-color: $green;
     background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: $green;
     border-radius: 25px;
   }
+  */
 }

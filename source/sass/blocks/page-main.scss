@@ -1,7 +1,8 @@
 .page-main__title {
-  @include indent-reset;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: $black;
+
+  @include indent-reset;
 }

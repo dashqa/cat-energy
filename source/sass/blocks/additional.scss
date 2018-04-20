@@ -1,31 +1,25 @@
 .additional__title {
-  @include indent-reset;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $black;
+
+  @include indent-reset;
 }
 
 .additional__subtitle {
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
 }
 
 .additional__cell {
-  font-family: $arial;
   font-size: 14px;
   line-height: 14px;
+  font-family: $arial;
   color: $grey;
-}
-
-.additional__link {
-  font-size: 16px;
-  line-height: 20px;
-  color: $white;
-  text-transform: uppercase;
 }
 
 .additional__banner {
@@ -35,9 +29,12 @@
 }
 
 .additional__banner-link {
-  font-family: $arial;
   font-size: 16px;
   line-height: 20px;
+  font-family: $arial;
   color: $white;
 }
 
+.additional__list {
+  @include list-reset;
+}

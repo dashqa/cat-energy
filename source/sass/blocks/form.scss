@@ -1,55 +1,51 @@
-.form {
-}
 
 .form__contact,
 .form__radio-btn,
 .form__textarea,
-.form__checkbox-field {
-  @include indent-reset;
+.form__checkbox-field,
+.form__input {
   border: 0 none;
+
+  @include indent-reset;
 }
 
 .form__description {
-  @include indent-reset;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @include indent-reset;
 }
 
 .form__label {
-  font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.form__button {
   font-size: 16px;
-  line-height: 20px;
-  color: $white;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
 }
 
 .form__legend {
-  font-family: $arial;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 16px;
+  font-family: $arial;
   color: $grey;
 }
 
 .form__title {
-  @include indent-reset;
-  font-size: 24px;
   font-weight: 400;
+  font-size: 24px;
   line-height: 24px;
   color: $black;
+
+  @include indent-reset;
 }
 
 .form__info {
-  font-family: $arial;
   font-size: 14px;
   line-height: 20px;
+  font-family: $arial;
   color: $grey;
 }
 
@@ -65,19 +61,20 @@
 
 .form__button {
   padding: 0;
-  border: 0;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
   color: $white;
-  background-color: transparent;
+  text-transform: uppercase;
+  background-color: $green;
+  border: 0;
 }
 
 .form__input {
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
   color: $grey;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
 }

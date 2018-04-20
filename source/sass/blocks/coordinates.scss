@@ -1,15 +1,21 @@
+.coordinates--inner-page {
+  background-color: $bg-grey;
+}
+
 .coordinates__title {
-  @include indent-reset;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+
+  @include indent-reset;
 }
 
 .coordinates__info {
-  @include indent-reset;
-  font-family: $arial;
   font-size: 14px;
   line-height: 20px;
+  font-family: $arial;
+
+  @include indent-reset;
 }
