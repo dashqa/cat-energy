@@ -24,7 +24,8 @@
   text-transform: uppercase;
 }
 
-.catalo__item {
+.catalog__item {
+  background-color: $bg-grey;
 
   &--slim::before {
     position: absolute;
