@@ -24,24 +24,20 @@
   height: 2px;
   background-color: $black;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    top: 7px;
     left: 0;
     width: 24px;
     height: 2px;
     background-color: $black;
   }
-
+  &::before {
+    top: 7px;
+  }
   &::after {
-    content: "";
-    position: absolute;
     top: -7px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $black;
   }
 }
 
@@ -52,3 +48,4 @@
 .main-nav__link {
   color: $black;
 }
+
