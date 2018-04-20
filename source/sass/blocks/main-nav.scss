@@ -33,9 +33,11 @@
     height: 2px;
     background-color: $black;
   }
+
   &::before {
     top: 7px;
   }
+  
   &::after {
     top: -7px;
   }
