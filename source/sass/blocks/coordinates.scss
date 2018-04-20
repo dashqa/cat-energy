@@ -1,0 +1,15 @@
+.coordinates__title {
+  @include indent-reset;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.coordinates__info {
+  @include indent-reset;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 20px;
+}

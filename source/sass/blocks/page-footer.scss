@@ -1,4 +1,9 @@
-.copyright__text {
+.page-footer__list {
+  @include list-reset;
+}
+
+.page-footer__copy-text {
+  font-family: $arial;
   line-height: 16px;
   color: $grey;
 }

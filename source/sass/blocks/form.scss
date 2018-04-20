@@ -1,7 +1,27 @@
 .form {
-  font-size: 16px;
+}
+
+.form__contact,
+.form__radio-btn,
+.form__textarea,
+.form__checkbox-field {
+  @include indent-reset;
+  border: 0 none;
+}
+
+.form__description {
+  @include indent-reset;
+  font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.form__label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
 }
 
 .form__button {
@@ -13,19 +33,51 @@
 .form__legend {
   font-family: $arial;
   font-size: 14px;
+  font-weight: 400;
   line-height: 16px;
   color: $grey;
 }
 
-
-.contact__title {
-  line-height: 20px;
-  text-transform: uppercase;
+.form__title {
+  @include indent-reset;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $black;
 }
 
-.contact__info {
+.form__info {
   font-family: $arial;
   font-size: 14px;
   line-height: 20px;
+  color: $grey;
+}
+
+.form__list {
+  @include list-reset;
+}
+
+.form__textarea-msg {
+  width: 280px;
+  height: 150px;
+  resize: none;
+}
+
+.form__button {
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: transparent;
+}
+
+.form__input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
   color: $grey;
 }

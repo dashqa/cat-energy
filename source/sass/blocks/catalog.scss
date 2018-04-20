@@ -1,18 +1,40 @@
+.catalog__list {
+  @include list-reset;
+}
+
 .catalog__subtitle {
+  font-weight: normal;
   font-size: 24px;
   line-height: 37px;
-  text-transform: uppercase;
   color: $black;
+  text-transform: uppercase;
 }
 
 .catalog__text {
-  font-family: $arial;
+  @include indent-reset;
   font-size: 14px;
+  font-family: $arial;
   color: $grey;
 }
 
 .catalog__link {
   font-size: 16px;
   line-height: 16px;
+  color: $black;
   text-transform: uppercase;
+}
+
+.catalo__item {
+
+  &--slim::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 51px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $green;
+    border-radius: 25px;
+  }
 }

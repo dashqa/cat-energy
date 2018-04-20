@@ -3,10 +3,16 @@
   line-height: 60px;
 }
 
+.product__list {
+  @include list-reset;
+}
+
 .product__subtitle {
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  color: $black;
 }
 .product__btn {
   font-size: 16px;
@@ -15,7 +21,7 @@
   color: $white;
 }
 
-.product-table {
+.product__table {
   font-family: $arial;
   font-size: 12px;
   line-height: 16px;

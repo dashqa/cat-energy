@@ -1,28 +1,47 @@
 .examples__title {
+  font-weight: 400;
   font-size: 36px;
   line-height: 60px;
+  color: $black;
+  @include indent-reset;
 }
 
-.examples__text {
+.examples__description {
+  font-size: 14px;
   font-family: $arial;
-  font-size: 14px;
   color: $grey;
+  @include indent-reset;
 }
 
-cost {
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+.examples__list {
+  @include list-reset;
 }
 
-.statistic__subtitle {
+.examples__subtitle {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  @include indent-reset;
+  color: $black;
+
+  &--cost {
+    font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  }
 }
 
-.statistic__text {
-  font-family: $arial;
+.examples__text {
   font-size: 12px;
   line-height: 12px;
+  font-family: $arial;
+  @include indent-reset;
+
+  &--cost {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+  }
 }

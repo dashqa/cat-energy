@@ -1,10 +1,14 @@
 .additional__title {
+  @include indent-reset;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  color: $black;
 }
 
 .additional__subtitle {
   font-size: 16px;
+  font-weight: 400;
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
@@ -24,7 +28,13 @@
   text-transform: uppercase;
 }
 
-.banner__link {
+.additional__banner {
+  width: 280px;
+  height: 289px;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center $green;
+}
+
+.additional__banner-link {
   font-family: $arial;
   font-size: 16px;
   line-height: 20px;
