@@ -25,7 +25,7 @@
 .additional__banner {
   width: 280px;
   height: 289px;
-  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center $green;
+  background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
 }
 
 .additional__banner-link {
