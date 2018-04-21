@@ -1,0 +1,19 @@
+.advantages__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+
+  @include indent-reset;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__text {
+  font-size: 14px;
+  font-family: $arial;
+
+  @include indent-reset;
+}

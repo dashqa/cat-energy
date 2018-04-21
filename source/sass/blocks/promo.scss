@@ -1,0 +1,22 @@
+.promo {
+  color: $white;
+  background-color: $green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo__subtitle {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  @include indent-reset;
+}

@@ -1,0 +1,13 @@
+.page-footer {
+  background-color: $bg-grey;
+}
+
+.page-footer__list {
+  @include list-reset;
+}
+
+.page-footer__copy-text {
+  line-height: 16px;
+  font-family: $arial;
+  color: $grey;
+}

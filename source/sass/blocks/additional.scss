@@ -1,0 +1,40 @@
+.additional__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+
+  @include indent-reset;
+}
+
+.additional__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additional__cell {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $arial;
+  color: $grey;
+}
+
+.additional__banner {
+  width: 280px;
+  height: 289px;
+  background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+}
+
+.additional__banner-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $arial;
+  color: $white;
+}
+
+.additional__list {
+  @include list-reset;
+}

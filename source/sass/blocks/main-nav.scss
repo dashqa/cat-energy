@@ -1,0 +1,52 @@
+.main-nav {
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 24px;
+  height: 18px;
+  padding: 15px;
+  background-color: transparent;
+  border: 0;
+}
+
+.main-nav__burger {
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    top: 7px;
+  }
+
+  &::after {
+    top: -7px;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__link {
+  color: $black;
+}

@@ -1,0 +1,80 @@
+
+.form__contact,
+.form__radio-btn,
+.form__textarea,
+.form__checkbox-field,
+.form__input {
+  border: 0 none;
+
+  @include indent-reset;
+}
+
+.form__description {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include indent-reset;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.form__legend {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $arial;
+  color: $grey;
+}
+
+.form__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+
+  @include indent-reset;
+}
+
+.form__info {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $arial;
+  color: $grey;
+}
+
+.form__list {
+  @include list-reset;
+}
+
+.form__textarea-msg {
+  width: 280px;
+  height: 150px;
+  resize: none;
+}
+
+.form__button {
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $green;
+  border: 0;
+}
+
+.form__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+}

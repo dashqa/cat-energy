@@ -1,0 +1,30 @@
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__subtitle {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.catalog__text {
+  font-size: 14px;
+  font-family: $arial;
+  color: $grey;
+
+  @include indent-reset;
+}
+
+.catalog__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.catalog__item {
+  background-color: $bg-grey;
+}

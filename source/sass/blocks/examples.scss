@@ -1,0 +1,55 @@
+.examples {
+  background-color: $bg-grey;
+}
+
+.examples__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+
+  @include indent-reset;
+}
+
+.examples__description {
+  font-size: 14px;
+  font-family: $arial;
+  color: $grey;
+
+  @include indent-reset;
+}
+
+.examples__list {
+  @include list-reset;
+}
+
+.examples__subtitle {
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  text-transform: uppercase;
+
+  @include indent-reset;
+
+  &--cost {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.examples__text {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $arial;
+
+  @include indent-reset;
+
+  &--cost {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $oswald;
+    color: $black;
+    text-transform: uppercase;
+  }
+}
