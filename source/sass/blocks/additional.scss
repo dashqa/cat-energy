@@ -4,7 +4,7 @@
     justify-content: space-between;
   }
 
-  @media (min-width:$desktop) {
+  @media (min-width: $desktop) {
     flex-direction: row;
   }
 }
