@@ -9,12 +9,14 @@
   color: $white;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     background-color: transparent;
     background-image: none;
   }
+
   @media (min-width:$desktop) {
     background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($green 305px, transparent 305px);
   }
@@ -27,6 +29,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+
   @media (min-width: $tablet) {
     color: $black;
   }
@@ -38,6 +41,7 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
   @media (min-width: $tablet) {
     color: $black;
   }

@@ -7,6 +7,7 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+
   @media (min-width: $tablet) {
     flex-direction: row;
   }

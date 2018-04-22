@@ -39,9 +39,11 @@ a {
   width: auto;
   margin: 0 auto;
   padding: 0 20px;
+
   @media  (min-width: $tablet) {
     padding: 0 64px;
   }
+
   @media (min-width: $desktop) {
     width: 960px;
     padding: 0 120px;

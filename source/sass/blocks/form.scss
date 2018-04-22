@@ -9,15 +9,18 @@
 
 .form__list {
   @include list-reset;
+
   &--cat-info {
     padding-bottom: 23px;
     border-bottom: 1px solid $border;
   }
+
   &--radio-field {
     padding-top: 23px;
     padding-bottom: 26px;
     border-bottom: 1px solid $border;
   }
+
   &--checkbox-field {
     margin-bottom: 34px;
     @media (min-width: $tablet) {
@@ -30,17 +33,21 @@
 }
 
 .form__item {
+
   &--text-field:not(:last-child) {
     margin-bottom: 14px;
   }
+
   &--radio-field {
     &:nth-child(1) {
       margin-bottom: 26px;
     }
+
     &:nth-child(2) {
       margin-bottom: 27px;
     }
   }
+
   &--checkbox-field {
     &:nth-child(1) {
       margin-bottom: 28px;

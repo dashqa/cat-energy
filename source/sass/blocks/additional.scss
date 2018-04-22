@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
   }
+
   @media (min-width:$desktop) {
     flex-direction: row;
   }
@@ -22,6 +23,7 @@
 .additional__list {
   @include list-reset;
   margin-bottom: 42px;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;

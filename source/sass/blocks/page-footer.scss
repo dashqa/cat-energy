@@ -1,5 +1,6 @@
 .page-footer {
   background-color: $bg-grey;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;

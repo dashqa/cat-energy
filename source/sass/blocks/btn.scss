@@ -8,14 +8,17 @@
   text-align: center;
   text-transform: uppercase;
   word-wrap: break-word;
+
   &--grey {
     color: $grey;
     background-color: $bg-grey;
   }
+
   &--green {
     color: white;
     background-color: $green;
   }
+
   &--promo {
     position: relative;
     margin: 303px 20px 21px;
@@ -23,9 +26,11 @@
     font-size: 14px;
     line-height: 18px;
   }
+
   &--product {
     width: 100%;
   }
+
   &--form {
     width: 100%;
     margin-bottom: 23px;

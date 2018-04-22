@@ -4,16 +4,19 @@
   font-size: 36px;
   line-height: 60px;
   color: $black;
+
   &--catalog-page,
   &--form-page {
     padding: 20px;
     padding-top: 15px;
   }
+
   &--catalog-page {
     padding-bottom: 26px;
     border-top: 1px solid $border;
     border-bottom: 1px solid $border;
   }
+
   &--form-page {
     padding-bottom: 23px;
     border-top: 1px solid $border;

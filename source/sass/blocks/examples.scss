@@ -1,5 +1,6 @@
 .examples {
   background-color: $bg-grey;
+
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
@@ -48,6 +49,7 @@
   &:first-child {
     margin-right: 55px;
   }
+
   &--cost {
     display: flex;
     justify-content: space-between;
@@ -56,16 +58,13 @@
   }
 }
 
-.examples__text--cost {
-  display: block;
-}
-
 .examples__subtitle {
   @include indent-reset;
   font-size: 24px;
   line-height: 24px;
   color: $black;
   text-transform: uppercase;
+
   &--cost {
     padding-right: 3px;
     font-size: 14px;
@@ -83,7 +82,9 @@
   line-height: 12px;
   font-family: $arial;
   text-align: center;
+
   &--cost {
+    display: block;
     width: auto;
     padding-top: 0;
     font-size: 14px;
