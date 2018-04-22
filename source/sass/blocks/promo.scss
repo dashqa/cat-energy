@@ -1,22 +1,52 @@
 .promo {
+  position: relative;
+}
+
+.promo__wrapper {
+  width: 100%;
+  min-height: 305px;
+  text-align: center;
   color: $white;
-  background-color: $green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    background-image: none;
+  }
+  @media (min-width:$desktop) {
+    background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($green 305px, transparent 305px);
+  }
 }
 
 .promo__subtitle {
+  display: block;
+  margin-bottom: 23px;
+  padding-top: 27px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  @media (min-width: $tablet) {
+    color: $black;
+  }
 }
 
 .promo__text {
+  @include indent-reset;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  @media (min-width: $tablet) {
+    color: $black;
+  }
+}
 
-  @include indent-reset;
+.promo__image {
+  position: absolute;
+  right: 0;
+  bottom: 65px;
+  left: 0;
+  margin: auto;
 }

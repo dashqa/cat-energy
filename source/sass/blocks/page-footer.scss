@@ -1,13 +1,40 @@
 .page-footer {
   background-color: $bg-grey;
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__list {
   @include list-reset;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__item {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
 }
 
 .page-footer__copy-text {
   line-height: 16px;
   font-family: $arial;
   color: $grey;
+}
+
+.page-footer__text-icon {
+  display: block;
+  margin: 0 auto;
+  padding: 39px 0 32px;
+}
+
+.page-footer__link {
+  display: flex;
+  justify-content: space-between;
 }

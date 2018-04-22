@@ -4,49 +4,71 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $blackish;
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 0;
-  right: 10px;
-  width: 24px;
-  height: 18px;
+  right: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
   padding: 15px;
   background-color: transparent;
   border: 0;
+  @media (min-width: $tablet) {
+    @include hidden;
+  }
 }
 
-.main-nav__burger {
+.main-nav__toggle-bar {
   position: absolute;
-  top: 0;
   width: 24px;
   height: 2px;
   background-color: $black;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $black;
+  &--top {
+    top: 10px;
+    transform-origin: left center;
   }
-
-  &::before {
-    top: 7px;
+  &--middle {
+    top: 18px;
+    transform-origin: left center;
   }
-
-  &::after {
-    top: -7px;
+  &--bottom {
+    top: 26px;
+    transform-origin: left center;
   }
 }
 
 .main-nav__list {
   @include list-reset;
+  text-align: center;
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav__link {
   color: $black;
+}
+
+.main-nav__logo {
+  margin: 11px 0 16px 0;
+}
+
+.main-nav__item {
+  margin: 0 -20px;
+  padding: 24px;
+  border-top: 1px solid $border;
 }

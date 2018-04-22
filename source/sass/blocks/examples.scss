@@ -1,37 +1,73 @@
 .examples {
   background-color: $bg-grey;
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .examples__title {
+  @include indent-reset;
+  display: block;
+  margin-top: 20px;
+  padding: 20px 0;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: $black;
-
-  @include indent-reset;
 }
 
 .examples__description {
+  @include indent-reset;
+  padding-right: 10px;
+  padding-bottom: 27px;
   font-size: 14px;
   font-family: $arial;
   color: $grey;
-
-  @include indent-reset;
 }
 
 .examples__list {
-  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 22px;
+  padding-left: 42px;
+  list-style: none;
+}
+
+.examples__for-desktop {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.examples__item {
+  &:first-child {
+    margin-right: 55px;
+  }
+  &--cost {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+    padding-left: 5px;
+  }
+}
+
+.examples__text--cost {
+  display: block;
 }
 
 .examples__subtitle {
+  @include indent-reset;
   font-size: 24px;
   line-height: 24px;
   color: $black;
   text-transform: uppercase;
-
-  @include indent-reset;
-
   &--cost {
+    padding-right: 3px;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
@@ -39,13 +75,17 @@
 }
 
 .examples__text {
+  @include indent-reset;
+  display: block;
+  width: 10px;
+  padding-top: 5px;
   font-size: 12px;
   line-height: 12px;
   font-family: $arial;
-
-  @include indent-reset;
-
+  text-align: center;
   &--cost {
+    width: auto;
+    padding-top: 0;
     font-size: 14px;
     line-height: 20px;
     font-family: $oswald;

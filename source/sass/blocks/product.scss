@@ -5,9 +5,25 @@
 
 .product__list {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.product__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $border;
 }
 
 .product__subtitle {
+  display: block;
+  width: 77px;
+  margin-bottom: 13px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -16,8 +32,17 @@
 }
 
 .product__table {
+  @include indent-reset;
+  width: 140px;
+  border-collapse: collapse;
   font-size: 12px;
   line-height: 16px;
   font-family: $arial;
   color: $grey;
+}
+
+.product__cell {
+  &:not(:nth-last-of-type(2n)) {
+    text-align: end;
+  }
 }

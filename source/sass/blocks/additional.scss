@@ -1,13 +1,41 @@
+.additional__wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width:$desktop) {
+    flex-direction: row;
+  }
+}
+
 .additional__title {
+  @include indent-reset;
+  margin-top: 30px;
+  padding-bottom: 35px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $black;
+  border-bottom: 1px solid $border;
+}
 
-  @include indent-reset;
+.additional__list {
+  @include list-reset;
+  margin-bottom: 42px;
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.additional__item {
+  padding-bottom: 16px;
+  border-bottom: 1px solid $border;
 }
 
 .additional__subtitle {
+  display: block;
+  margin: 13px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -15,26 +43,37 @@
   text-transform: uppercase;
 }
 
+.additional__table {
+  @include indent-reset;
+  width: 280px;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+}
+
 .additional__cell {
   font-size: 14px;
   line-height: 14px;
   font-family: $arial;
   color: $grey;
+  &:nth-child(2) {
+    text-align: right;
+  }
 }
 
 .additional__banner {
-  width: 280px;
-  height: 289px;
-  background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+  min-width: 280px;
+  min-height: 289px;
+  margin-bottom: 35px;
+  background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .additional__banner-link {
+  padding: 0 50px;
+  padding-top: 190px;
   font-size: 16px;
   line-height: 20px;
   font-family: $arial;
+  text-align: center;
   color: $white;
-}
-
-.additional__list {
-  @include list-reset;
 }
