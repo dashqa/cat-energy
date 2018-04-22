@@ -23,6 +23,7 @@
 
   &--checkbox-field {
     margin-bottom: 34px;
+
     @media (min-width: $tablet) {
       display: flex;
       flex-direction: row;
@@ -33,7 +34,6 @@
 }
 
 .form__item {
-
   &--text-field:not(:last-child) {
     margin-bottom: 14px;
   }
@@ -52,9 +52,11 @@
     &:nth-child(1) {
       margin-bottom: 28px;
     }
+
     &:nth-child(2) {
       margin-bottom: 25px;
     }
+
     &:nth-child(3) {
       margin-bottom: 27px;
     }

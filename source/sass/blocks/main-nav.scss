@@ -57,6 +57,7 @@
 .main-nav__list {
   @include list-reset;
   text-align: center;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;

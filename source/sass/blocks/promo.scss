@@ -17,7 +17,7 @@
     background-image: none;
   }
 
-  @media (min-width:$desktop) {
+  @media (min-width: $desktop) {
     background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($green 305px, transparent 305px);
   }
 }
