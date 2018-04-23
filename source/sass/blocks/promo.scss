@@ -7,6 +7,7 @@
   min-height: 305px;
   text-align: center;
   color: $white;
+  background-color: $bg-green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 
@@ -18,7 +19,7 @@
   }
 
   @media (min-width: $desktop) {
-    background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($green 305px, transparent 305px);
+    background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($bg-green 305px, transparent 305px);
   }
 }
 

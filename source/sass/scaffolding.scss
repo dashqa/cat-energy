@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  min-width: 320px;
+  width: auto;
   margin: 0 auto;
   font-size: 16px;
   line-height: 18px;
@@ -41,12 +41,13 @@ a {
   padding: 0 20px;
 
   @media (min-width: $tablet) {
-    padding: 0 64px;
+    width: 708px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop) {
-    width: 960px;
-    padding: 0 120px;
+    width: 1220px;
+    padding: 0 110px;
   }
 }
 
