@@ -1,19 +1,45 @@
 .advantages__title {
+  @include indent-reset;
+  display: block;
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: $black;
 
-  @include indent-reset;
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 60px;
+    line-height: 60px;
 }
 
 .advantages__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+}
+
+.advantages__item {
+  margin-bottom: 24px;
 }
 
 .advantages__text {
+  @include indent-reset;
+  padding-left: 80px;
   font-size: 14px;
   font-family: $arial;
 
-  @include indent-reset;
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

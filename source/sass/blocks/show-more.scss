@@ -1,15 +1,30 @@
 .show-more__subtitle {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-top: 80px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
 
 .show-more__text {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   font-family: $arial;
   color: $grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
 }

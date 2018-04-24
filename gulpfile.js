@@ -11,12 +11,12 @@ var server = require("browser-sync").create();
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
+    .pipe(wait(300))
     .pipe(sass({includePaths: ['source/sass/blocks']}))
     .pipe(postcss([
       autoprefixer()
     ]))
     .pipe(gulp.dest("source/css"))
-    .pipe(wait(3000))
     .pipe(server.stream());
 });
 

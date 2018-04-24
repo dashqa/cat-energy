@@ -3,19 +3,33 @@
 }
 
 .coordinates__title {
+  @include indent-reset;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
 
-  @include indent-reset;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .coordinates__info {
+  @include indent-reset;
   font-size: 14px;
   line-height: 20px;
   font-family: $arial;
 
-  @include indent-reset;
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.coordinates__contact {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }

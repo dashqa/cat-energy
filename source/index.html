@@ -3,19 +3,23 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img class="page-header__icon" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип Кэт энерджи">
-      </a>
-      <nav class="main-nav main-nav--open">
+    <div class="container">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <a class="main-nav__logo">
+          <img class="main-nav___icon" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип Кэт энерджи">
+        </a>
         <button class="main-nav__toggle" type="button">
-          <span class="main-nav__burger"></span>
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="main-nav__toggle-bar main-nav__toggle-bar--top"></span>
+          <span class="main-nav__toggle-bar main-nav__toggle-bar--middle"></span>
+          <span class="main-nav__toggle-bar main-nav__toggle-bar--bottom"></span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -39,13 +43,13 @@
       <div class="promo__wrapper">
         <h2 class="promo__title visually-hidden">Подбор программы питания</h2>
         <strong class="promo__subtitle">Функциональное питание для котов</strong>
-        <span class="promo__text">Занялся собой? Займись котом!</span>
+        <p class="promo__text">Занялся собой? Займись котом!</p>
         <a href="form.html" class="btn btn--green btn--promo">Подобрать программу</a>
       </div>
       <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Пример продукции" class="promo__image">
     </section>
     <section class="catalog">
-      <div class="catalog__wrapper">
+      <div class="container">
         <h2 class="catalog__title visually-hidden">Категории продукции</h2>
         <ul class="catalog__list">
           <li class="catalog__item catalog__item--slim">
@@ -65,8 +69,8 @@
       </div>
     </section>
     <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="advantages__title">Как это работает?</h2>
+      <div class="container">
+        <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -84,25 +88,27 @@
       </div>
     </section>
     <section class="examples">
-      <div class="examples__wrapper">
-        <h2 class="examples__title">Живой пример</h2>
-        <p class="examples__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
-          тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="examples__statistic">
-          <ul class="examples__list">
-            <li class="examples__item">
-              <p class="examples__subtitle">5 кг</p>
-              <span class="examples__text">снижение веса</span>
-            </li>
-            <li class="examples__item">
-              <p class="examples__subtitle"> 60 дней</p>
-              <span class="examples__text">затрачено времени</span>
-            </li>
-            <li class="examples__item examples__item--cost">
-              <p class="examples__subtitle examples__subtitle--cost">Затраты на питание</p>
-              <span class="examples__text examples__text--cost">15 000 руб.</span>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="examples__info">
+          <h2 class="examples__title">Живой пример</h2>
+          <p class="examples__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
+            тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="examples__statistic">
+            <ul class="examples__list">
+              <li class="examples__item">
+                <p class="examples__subtitle">5 кг</p>
+                <span class="examples__text">снижение веса</span>
+              </li>
+              <li class="examples__item">
+                <p class="examples__subtitle"> 60 дней</p>
+                <span class="examples__text">затрачено времени</span>
+              </li>
+              <li class="examples__item examples__item--cost">
+                <p class="examples__subtitle examples__subtitle--cost">Затраты на питание:</p>
+                <span class="examples__text examples__text--cost">15 000 руб.</span>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="examples__slider slider">
           <div class="slider__images">
@@ -117,7 +123,7 @@
       </div>
     </section>
     <section class="coordinates">
-      <div class="coordinates__wrapper">
+      <div class="container">
         <div class="coordinates__contact">
           <h2 class="coordinates__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="coordinates__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -127,7 +133,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="container">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
         <img class="page-footer__text-icon" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
@@ -158,6 +164,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

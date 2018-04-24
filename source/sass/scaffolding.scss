@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   background-color: $white;
   font-weight: normal;
   color: $grey;
@@ -35,11 +35,20 @@ a {
   text-decoration: none;
 }
 
-.no-overflow {
-  position: fixed;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
+.container {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1440px;
+    padding: 0 110px;
+  }
 }
 
 .visually-hidden {

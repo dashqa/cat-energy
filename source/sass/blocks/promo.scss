@@ -1,22 +1,66 @@
 .promo {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 305px;
+    background-color: $bg-green;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-size: 320px 305px;
+    z-index: -5;
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      background-image: none;
+    }
+    @media (min-width: $desktop) {
+      background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($bg-green 305px, transparent 305px);
+    }
+  }
+}
+
+.promo__wrapper {
+  text-align: center;
   color: $white;
-  background-color: $green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .promo__subtitle {
-  font-weight: normal;
+  display: block;
+  margin-bottom: 23px;
+  padding-top: 27px;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
 }
 
 .promo__text {
+  @include indent-reset;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-
-  @include indent-reset;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+  }
 }
+
+.promo__image {
+  position: absolute;
+  right: 0;
+  bottom: 65px;
+  left: 0;
+  margin: auto;
+}
+

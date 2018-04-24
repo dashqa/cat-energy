@@ -3,19 +3,23 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Кэт энерджи: Каталог продукции </title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a href="index.html" class="page-header__logo">
-        <img class="page-header__icon" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип Кэт энерджи">
-      </a>
+    <div class="container">
       <nav class="main-nav">
+        <a href="index.html" class="main-nav__logo">
+          <img class="main-nav___icon" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип Кэт энерджи">
+        </a>
         <button class="main-nav__toggle" type="button">
-          <span class="main-nav__burger"></span>
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="main-nav__toggle-bar main-nav__toggle-bar--top"></span>
+          <span class="main-nav__toggle-bar main-nav__toggle-bar--middle"></span>
+          <span class="main-nav__toggle-bar main-nav__toggle-bar--bottom"></span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -34,17 +38,17 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Каталог продукции</h1>
     <section class="product" id="product">
-      <div class="product__wrapper">
+      <div class="container">
+        <h1 class="page-main__title page-main__title--catalog-page">Каталог продукции</h1>
         <h2 class="product__title visually-hidden">Список кормов</h2>
         <ul class="product__list">
           <li class="product__item">
             <a href="products/energypro-500-chicken.html" class="product__link">
               <img class="product__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro 500г">
-              <strong class="product__subtitle">Cat Energy Pro 500 г</strong>
             </a>
             <div class="product__info">
+              <strong class="product__subtitle">Cat Energy Pro 500 г</strong>
               <table class="product__table">
                 <tr class="product__row">
                   <td class="product__cell">Объём</td>
@@ -56,18 +60,18 @@
                 </tr>
                 <tr class="product__row">
                   <td class="product__cell">Цена</td>
-                  <td class="product__cell">700 р</td>
+                  <td class="product__cell">700 P</td>
                 </tr>
               </table>
             </div>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
+            <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
           </li>
           <li class="product__item">
             <a href="products/energypro-1000-chicken.html" class="product__link">
               <img class="product__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro 1000г">
-              <strong class="product__subtitle">Cat Energy Pro 1000 г</strong>
             </a>
             <div class="product__info">
+              <strong class="product__subtitle">Cat Energy Pro 1000 г</strong>
               <table class="product__table">
                 <tr class="product__row">
                   <td class="product__cell">Объём</td>
@@ -79,18 +83,18 @@
                 </tr>
                 <tr class="product__row">
                   <td class="product__cell">Цена</td>
-                  <td class="product__cell">1000 р</td>
+                  <td class="product__cell">1000 P</td>
                 </tr>
               </table>
             </div>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
+            <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
           </li>
           <li class="product__item">
             <a href="products/energypro-500-fish.html" class="product__link">
               <img class="product__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro 500г">
-              <strong class="product__subtitle">Cat Energy Pro 500 г</strong>
             </a>
             <div class="product__info">
+              <strong class="product__subtitle">Cat Energy Pro 500 г</strong>
               <table class="product__table">
                 <tr class="product__row">
                   <td class="product__cell">Объём</td>
@@ -102,18 +106,18 @@
                 </tr>
                 <tr class="product__row">
                   <td class="product__cell">Цена</td>
-                  <td class="product__cell">700 р</td>
+                  <td class="product__cell">700 P</td>
                 </tr>
               </table>
             </div>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
+            <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
           </li>
           <li class="product__item">
             <a href="products/energypro-1000-fish.html" class="product__link">
               <img class="product__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro 1000г">
-              <strong class="product__subtitle">Cat Energy Pro 1000 г</strong>
             </a>
             <div class="product__info">
+              <strong class="product__subtitle">Cat Energy Pro 1000 г</strong>
               <table class="product__table">
                 <tr class="product__row">
                   <td class="product__cell">Объём</td>
@@ -125,18 +129,18 @@
                 </tr>
                 <tr class="product__row">
                   <td class="product__cell">Цена</td>
-                  <td class="product__cell">1000 р</td>
+                  <td class="product__cell">1000 P</td>
                 </tr>
               </table>
             </div>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
+            <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
           </li>
           <li class="product__item">
             <a href="products/energypro-500-buchwheat.html" class="product__link">
               <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500г">
-              <strong class="product__subtitle">Cat Energy Slim 500 г</strong>
             </a>
             <div class="product__info">
+              <strong class="product__subtitle">Cat Energy Slim 500 г</strong>
               <table class="product__table">
                 <tr class="product__row">
                   <td class="product__cell">Объём</td>
@@ -148,18 +152,18 @@
                 </tr>
                 <tr class="product__row">
                   <td class="product__cell">Цена</td>
-                  <td class="product__cell">400 р</td>
+                  <td class="product__cell">400 P</td>
                 </tr>
               </table>
             </div>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
+            <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
           </li>
           <li class="product__item">
             <a href="products/energyslim-1000-buchwheat.html" class="product__link">
               <img class="product__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 1000г">
-              <strong class="product__subtitle">Cat Energy Slim 1000 г</strong>
             </a>
             <div class="product__info">
+              <strong class="product__subtitle">Cat Energy Slim 1000 г</strong>
               <table class="product__table">
                 <tr class="product__row">
                   <td class="product__cell">Объём</td>
@@ -171,18 +175,18 @@
                 </tr>
                 <tr class="product__row">
                   <td class="product__cell">Цена</td>
-                  <td class="product__cell">700 р</td>
+                  <td class="product__cell">700 P</td>
                 </tr>
               </table>
             </div>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
+            <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
           </li>
           <li class="product__item">
             <a href="products/energyslim-500-rise.html" class="product__link">
               <img class="product__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500г">
-              <strong class="product__subtitle">Cat Energy Slim 500 г</strong>
             </a>
             <div class="product__info">
+              <strong class="product__subtitle">Cat Energy Slim 500 г</strong>
               <table class="product__table">
                 <tr class="product__row">
                   <td class="product__cell">Объём</td>
@@ -194,72 +198,74 @@
                 </tr>
                 <tr class="product__row">
                   <td class="product__cell">Цена</td>
-                  <td class="product__cell">500 р</td>
+                  <td class="product__cell">500 P</td>
                 </tr>
               </table>
             </div>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
+            <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
           </li>
           <li class="product__item show-more">
             <strong class="show-more__subtitle">Показать ещё 100500 товаров</strong>
             <span class="show-more__text">На самом деле вкусов гораздо больше!</span>
-            <a href="new-products.html" class="btn btn--grey">Показать все</a>
+            <a href="new-products.html" class="btn--product btn btn--grey">Показать все</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="additional">
-      <h2 class="additional__title">Дополнительные товары</h2>
-      <div class="additional__wrapper">
-        <ul class="additional__list">
-          <li class="additional__item">
-            <strong class="additional__subtitle">Сахарозаменитель</strong>
-            <table class="additional__table">
-              <tr class="additional__row">
-                <td class="additional__cell">1 упаковка (100 г)</td>
-                <td class="additional__cell">100 р</td>
-              </tr>
-            </table>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
-          </li>
-          <li class="additional__item">
-            <strong class="additional__subtitle">Питьевая вода</strong>
-            <table class="additional__table">
-              <tr class="additional__row">
-                <td class="additional__cell">5 литров</td>
-                <td class="additional__cell">50 р</td>
-              </tr>
-            </table>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
-          </li>
-          <li class="additional__item">
-            <strong class="additional__subtitle">Молоко</strong>
-            <table class="additional__table">
-              <tr class="additional__row">
-                <td class="additional__cell">1 литр</td>
-                <td class="additional__cell">100 р</td>
-              </tr>
-            </table>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
-          </li>
-          <li class="additional__item">
-            <strong class="additional__subtitle">Витамины</strong>
-            <table class="additional__table">
-              <tr class="additional__row">
-                <td class="additional__cell">1 упаковка (30 г)</td>
-                <td class="additional__cell">300 р</td>
-              </tr>
-            </table>
-            <a href="cart.html" class="btn btn--green">Заказать</a>
-          </li>
-        </ul>
-        <div class="additional__banner">
-          <a href="#" class="additional__banner-link">Закажите все и получите чехол для кота в подарок!</a>
+      <div class="container">
+        <h2 class="additional__title">Дополнительные товары</h2>
+        <div class="additional__wrapper">
+          <ul class="additional__list">
+            <li class="additional__item">
+              <strong class="additional__subtitle">Сахарозаменитель</strong>
+              <table class="additional__table">
+                <tr class="additional__row">
+                  <td class="additional__cell">1 упаковка (100 г)</td>
+                  <td class="additional__cell">100 Р.</td>
+                </tr>
+              </table>
+              <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
+            </li>
+            <li class="additional__item">
+              <strong class="additional__subtitle">Питьевая вода</strong>
+              <table class="additional__table">
+                <tr class="additional__row">
+                  <td class="additional__cell">5 литров</td>
+                  <td class="additional__cell">50 Р.</td>
+                </tr>
+              </table>
+              <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
+            </li>
+            <li class="additional__item">
+              <strong class="additional__subtitle">Молоко</strong>
+              <table class="additional__table">
+                <tr class="additional__row">
+                  <td class="additional__cell">1 литр</td>
+                  <td class="additional__cell">100 Р.</td>
+                </tr>
+              </table>
+              <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
+            </li>
+            <li class="additional__item">
+              <strong class="additional__subtitle">Витамины</strong>
+              <table class="additional__table">
+                <tr class="additional__row">
+                  <td class="additional__cell">1 упаковка (30 г)</td>
+                  <td class="additional__cell">300 Р.</td>
+                </tr>
+              </table>
+              <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
+            </li>
+          </ul>
+          <div class="additional__banner">
+            <a href="#" class="additional__banner-link">Закажите все и получите чехол для кота в подарок!</a>
+          </div>
         </div>
       </div>
     </section>
     <section class="coordinates coordinates--inner-page">
-      <div class="coordinates__wrapper">
+      <div class="container">
         <div class="coordinates__contact">
           <h2 class="coordinates__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="coordinates__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -269,7 +275,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="container">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
         <img class="page-footer__text-icon" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
