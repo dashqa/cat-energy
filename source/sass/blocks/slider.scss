@@ -4,6 +4,11 @@
   text-transform: uppercase;
   background-color: transparent;
   border: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    color: $black;
+  }
 }
 
 .slider__controls {

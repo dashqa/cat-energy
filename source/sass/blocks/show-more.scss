@@ -8,6 +8,10 @@
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
 
 .show-more__text {
@@ -19,4 +23,8 @@
   line-height: 16px;
   font-family: $arial;
   color: $grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
 }

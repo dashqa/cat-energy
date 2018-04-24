@@ -94,14 +94,24 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__label {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #222222;
+  color: $blackish;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .form__legend {
@@ -113,6 +123,11 @@
   font-family: $arial;
   text-align: center;
   color: $grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .form__title {
@@ -122,6 +137,11 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__info {
@@ -145,4 +165,9 @@
   text-transform: uppercase;
   word-wrap: break-word;
   border: 1px solid $bg-grey;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

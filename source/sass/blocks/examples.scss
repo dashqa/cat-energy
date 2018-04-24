@@ -17,6 +17,10 @@
   font-size: 36px;
   line-height: 60px;
   color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+  }
 }
 
 .examples__description {
@@ -26,6 +30,11 @@
   font-size: 14px;
   font-family: $arial;
   color: $grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .examples__list {
@@ -70,6 +79,14 @@
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
   }
 }
 
@@ -92,5 +109,14 @@
     font-family: $oswald;
     color: $black;
     text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
   }
 }

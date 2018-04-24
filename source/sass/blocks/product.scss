@@ -30,6 +30,10 @@
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
 
 .product__table {
@@ -40,6 +44,10 @@
   line-height: 16px;
   font-family: $arial;
   color: $grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
 }
 
 .product__cell {

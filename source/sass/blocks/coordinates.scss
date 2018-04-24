@@ -9,6 +9,11 @@
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .coordinates__info {
@@ -16,6 +21,10 @@
   font-size: 14px;
   line-height: 20px;
   font-family: $arial;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
 }
 
 .coordinates__contact {

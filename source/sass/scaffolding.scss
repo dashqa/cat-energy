@@ -41,12 +41,12 @@ a {
   padding: 0 20px;
 
   @media (min-width: $tablet) {
-    width: 708px;
+    width: 768px;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop) {
-    width: 1220px;
+    width: 1440px;
     padding: 0 110px;
   }
 }

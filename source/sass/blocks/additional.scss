@@ -18,6 +18,11 @@
   line-height: 24px;
   color: $black;
   border-bottom: 1px solid $border;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additional__list {
@@ -41,8 +46,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
+  color: $blackish;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional__table {
@@ -60,6 +70,11 @@
 
   &:nth-child(2) {
     text-align: right;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -79,4 +94,8 @@
   font-family: $arial;
   text-align: center;
   color: $white;
+
+  @media (min-width: $tablet) {
+
+  }
 }
