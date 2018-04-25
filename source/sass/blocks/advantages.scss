@@ -1,7 +1,7 @@
 .advantages__title {
   @include indent-reset;
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 23px;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -15,6 +15,7 @@
     font-size: 60px;
     line-height: 60px;
 }
+}
 
 .advantages__list {
   @include list-reset;
@@ -26,10 +27,34 @@
     flex-wrap: wrap;
   }
 }
-}
+
 
 .advantages__item {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
+  &::before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $green;
+      background-size: 50px 50px;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  &:nth-child(1)::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+  &:nth-child(2)::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+  &:nth-child(3)::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+  &:nth-child(4)::before {
+    background-image: url("../img/advantage-clock@1x.png");
+
+  }
+
 }
 
 .advantages__text {

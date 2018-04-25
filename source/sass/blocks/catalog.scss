@@ -1,6 +1,5 @@
 .catalog__list {
   @include list-reset;
-
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
@@ -17,7 +16,6 @@
   line-height: 37px;
   color: $black;
   text-transform: uppercase;
-
   @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 37px;
@@ -30,7 +28,6 @@
   font-size: 14px;
   font-family: $arial;
   color: $grey;
-
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
@@ -38,13 +35,23 @@
 }
 
 .catalog__link {
-  padding-bottom: 20px;
+  position: relative;
+  padding-bottom: 25px;
   padding-left: 20px;
   font-size: 16px;
   line-height: 16px;
   color: $black;
   text-transform: uppercase;
-
+  &::before {
+    position: absolute;
+    left: 110px;
+    content: "";
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
+    width: 24px;
+    height: 11px;
+    margin-left: 14px;
+    margin-top: 3px;
+  }
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
@@ -52,6 +59,40 @@
 }
 
 .catalog__item {
+  position: relative;
   margin-bottom: 20px;
   background-color: $bg-grey;
+  &::before {
+    position: absolute;
+    top: 25px;
+    left: 23px;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $green;
+  }
+  &--slim,
+  &--pro {
+    &::after {
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+    }
+  }
+  &--slim::after {
+    top: 23px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+  &--pro::after {
+    top: 35px;
+    left: 12px;
+    width: 70px;
+    height: 60px;
+    background-image: url("../img/icon-cat-pro.svg");
+  }
 }
+
