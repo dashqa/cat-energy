@@ -1,9 +1,16 @@
+.slider {
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+
 .slider__toggle {
   padding: 0;
   line-height: 20px;
   text-transform: uppercase;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -11,7 +18,43 @@
   }
 }
 
+.slider__bar {
+ display: flex;
+ margin: auto;
+ padding: 0 3px;
+ width: 84px;
+ height: 14px;
+ border-radius: 6px;
+ background-color: $white;
+ border: 1px solid $border;
+}
+
 .slider__controls {
   display: flex;
   justify-content: space-between;
+  width: 198px;
+  margin-left: 43px;
+  margin-top: 38px;
+  padding-bottom: 20px;
+}
+
+.slider__images {
+  height: 232px;
+}
+
+.slider__image:nth-child(2) {
+  display: none;
+}
+
+.slider__label {
+  margin: 0 auto;
+  margin-top: 3px;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $green;
+
+  &--2 {
+    background-color: transparent;
+  }
 }

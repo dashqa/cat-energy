@@ -110,14 +110,20 @@
             </ul>
           </div>
         </div>
-        <div class="examples__slider slider">
-          <div class="slider__images">
-            <img class="slider__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Фото кота: было">
-            <img class="slider__image" src="img/after-mobile@1x.png" width="320" height="240" alt="Фото кота: стало">
-          </div>
+      </div>
+      <div class="examples__slider slider">
+        <div class="slider__images">
+          <img class="slider__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Фото кота: было">
+          <img class="slider__image" src="img/after-mobile@1x.png" width="320" height="240" alt="Фото кота: стало">
+        </div>
+        <div class="container">
           <div class="slider__controls">
-            <button type="button" class="slider__toggle slider__toggle--active">было</button>
-            <button type="button" class="slider__toggle">стало</button>
+            <input type="button" id="toggle1" class="slider__toggle slider__toggle--active" value="было">
+            <div class="slider__bar">
+              <label for="toggle1" class="slider__label slider__label--1"></label>
+              <label for="toggle2" class="slider__label slider__label--2"></label>
+            </div>
+            <input type="button" id="toggle2" class="slider__toggle" value="стало">
           </div>
         </div>
       </div>
@@ -125,11 +131,12 @@
     <section class="coordinates">
       <div class="container">
         <div class="coordinates__contact">
-          <h2 class="coordinates__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="coordinates__title">Приглашаем
+            <br>к сотрудничеству дилеров!</h2>
           <p class="coordinates__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="coordinates__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
+      <div class="coordinates__map" aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></div>
     </section>
   </main>
   <footer class="page-footer">
@@ -168,3 +175,4 @@
 </body>
 
 </html>
+

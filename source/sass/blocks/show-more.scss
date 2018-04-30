@@ -1,8 +1,11 @@
+.show-more {
+  flex-direction: column;
+}
+
 .show-more__subtitle {
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
-  padding-top: 80px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -27,4 +30,11 @@
   @media (min-width: $tablet) {
     font-size: 16px;
   }
+}
+
+.show-more__link {
+  width: 30px;
+  height: 30px;
+  margin: 25px auto 26px;
+  opacity: .2;
 }

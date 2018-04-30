@@ -78,17 +78,29 @@
   }
 }
 
+.additional__image {
+  width: 55px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+
 .additional__banner {
+  display: flex;
+  flex-direction: column;
   min-width: 280px;
   min-height: 289px;
   margin-bottom: 35px;
-  background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat center center;
+  background-color: $green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 .additional__banner-link {
   padding: 0 50px;
-  padding-top: 190px;
+  margin-top: 65px;
   font-size: 16px;
   line-height: 20px;
   font-family: $arial;

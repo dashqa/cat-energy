@@ -44,7 +44,7 @@
   text-transform: uppercase;
   &::before {
     position: absolute;
-    left: 110px;
+    left: 102px;
     content: "";
     background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
     width: 24px;
@@ -60,7 +60,6 @@
 
 .catalog__item {
   position: relative;
-  margin-bottom: 20px;
   background-color: $bg-grey;
   &::before {
     position: absolute;
@@ -72,6 +71,10 @@
     border-radius: 50%;
     background-color: $green;
   }
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   &--slim,
   &--pro {
     &::after {

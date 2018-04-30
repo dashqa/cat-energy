@@ -8,19 +8,31 @@
   }
 }
 
+.page-footer__social {
+  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
+}
+
 .page-footer__list {
   @include list-reset;
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
 
 .page-footer__item {
-  width: 50px;
-  height: 50px;
+  padding: 0 18px;
+  width: 22px;
+  height: 22px;
   border: 1px solid black;
+}
+
+.page-footer__copyright {
+  padding-top: 15px;
 }
 
 .page-footer__copy-text {
@@ -38,4 +50,6 @@
 .page-footer__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-width: 280px;
 }

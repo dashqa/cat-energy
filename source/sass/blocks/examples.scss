@@ -40,6 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 35px;
   text-align: center;
 }
 
@@ -52,28 +53,29 @@
 
 .examples__item {
   position: relative;
+  text-align: center;
   &--cost {
     display: flex;
     justify-content: space-between;
-    padding-top: 21px;
-    padding-left: 5px;
+    padding-top: 20px;
+    padding-left: 45px;
   }
 }
 
 .examples__subtitle {
   @include indent-reset;
-  width: 122px;
-  height: 37px;
-  margin: 10px 0 0;
-  padding-top: 17px;
+  width: 124px;
+  padding: 15px 0;
   font-size: 24px;
   line-height: 24px;
   color: $black;
   text-transform: uppercase;
-  border: 1px solid silver;
+  border: 1px solid #cdcdcd;
   border-radius: 3px;
   &--cost {
     display: inline;
+    padding: 0;
+    padding-top: 15px;
     border: none;
     font-size: 14px;
     line-height: 20px;
@@ -90,8 +92,11 @@
 .examples__text {
   @include indent-reset;
   position: absolute;
-  top: 58px;
-  right: 26px;
+  top: 47px;
+  right: 25px;
+  display: block;
+  width: 75px;
+  padding: 0 10px;
   font-size: 12px;
   line-height: 12px;
   font-family: $arial;
@@ -99,9 +104,9 @@
   background-color: #f2f2f2;
   &--cost {
     position: static;
-    display: block;
-    margin: 10px 0 0;
-    padding-top: 17px;
+    width: auto;
+    padding-top: 15px;
+    padding-left: 3px;
     font-size: 14px;
     line-height: 20px;
     background-color: transparent;

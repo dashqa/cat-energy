@@ -4,6 +4,7 @@
 
 .coordinates__title {
   @include indent-reset;
+  width: 283px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -30,6 +31,16 @@
 .coordinates__contact {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 25px;
+}
+
+.coordinates__map {
+  width: 320px;
+  height: 363px;
+  margin: 0 auto;
+  background-color: #fdf7f0;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }

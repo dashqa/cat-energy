@@ -39,8 +39,8 @@
   </header>
   <main class="page-main">
     <section class="product" id="product">
+      <h1 class="page-main__title page-main__title--catalog-page">Каталог продукции</h1>
       <div class="container">
-        <h1 class="page-main__title page-main__title--catalog-page">Каталог продукции</h1>
         <h2 class="product__title visually-hidden">Список кормов</h2>
         <ul class="product__list">
           <li class="product__item">
@@ -205,6 +205,9 @@
             <a href="cart.html" class="btn--product btn btn--green">Заказать</a>
           </li>
           <li class="product__item show-more">
+            <a href="new-products.html" class="show-more__link">
+              <img class="show-more__image" src="/img/icon-plus-mobile.svg" alt="Показать все товары">
+            </a>
             <strong class="show-more__subtitle">Показать ещё 100500 товаров</strong>
             <span class="show-more__text">На самом деле вкусов гораздо больше!</span>
             <a href="new-products.html" class="btn--product btn btn--grey">Показать все</a>
@@ -259,6 +262,7 @@
             </li>
           </ul>
           <div class="additional__banner">
+            <img class="additional__image" src="/img/icon-gift.svg" width="55" height="60" alt="Подарок">
             <a href="#" class="additional__banner-link">Закажите все и получите чехол для кота в подарок!</a>
           </div>
         </div>
@@ -267,11 +271,12 @@
     <section class="coordinates coordinates--inner-page">
       <div class="container">
         <div class="coordinates__contact">
-          <h2 class="coordinates__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="coordinates__title">Приглашаем
+            <br>к сотрудничеству дилеров!</h2>
           <p class="coordinates__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="coordinates__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
+      <div class="coordinates__map" aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></div>
     </section>
   </main>
   <footer class="page-footer">
@@ -310,3 +315,4 @@
 </body>
 
 </html>
+

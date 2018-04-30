@@ -1,7 +1,7 @@
 .advantages__title {
   @include indent-reset;
-  display: block;
-  margin-bottom: 23px;
+  margin-top: 14px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -20,20 +20,21 @@
 .advantages__list {
   @include list-reset;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet) {
-    flex-direction: row;
-    flex-wrap: wrap;
+
   }
 }
 
 
 .advantages__item {
+  position: relative;
   margin-bottom: 26px;
   &::before {
       position: absolute;
       content: "";
+      top: -3px;
       width: 60px;
       height: 60px;
       background-color: $green;
@@ -59,6 +60,7 @@
 
 .advantages__text {
   @include indent-reset;
+  width: 280px;
   padding-left: 80px;
   font-size: 14px;
   font-family: $arial;
