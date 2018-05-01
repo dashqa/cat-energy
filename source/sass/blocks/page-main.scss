@@ -9,20 +9,29 @@
   &--form-page {
     padding: 20px;
     padding-top: 13px;
+
+    @media (min-width: $tablet) {
+      padding: 30px;
+      padding-top: 42px;
+    }
   }
 
   &--catalog-page {
-      padding-bottom: 27px;
-      border-top: 1px solid $border;
-      border-bottom: 1px solid $border;
-    }
+    padding-bottom: 27px;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+  }
 
   &--form-page {
-      padding-bottom: 25px;
-      border-top: 1px solid $border;
-    }
+    padding-bottom: 25px;
+    border-top: 1px solid $border;
 
     @media (min-width: $tablet) {
-      font-size: 60px;
+      padding-bottom: 54px;
     }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+  }
 }

@@ -12,6 +12,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    width: 235px;
     font-size: 20px;
     line-height: 25px;
   }
@@ -24,7 +25,9 @@
   font-family: $arial;
 
   @media (min-width: $tablet) {
+    width: 195px;
     font-size: 16px;
+    text-align: right;
   }
 }
 
@@ -33,14 +36,48 @@
   justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 25px;
+
+  &--bg {
+    background-color: $bg-grey;
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 65px;
+    padding-right: 40px;
+    padding-bottom: 62px;
+    padding-left: 40px;
+  }
 }
 
 .coordinates__map {
-  width: 320px;
+  width: auto;
   height: 363px;
   margin: 0 auto;
   background-color: #fdf7f0;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet) {
+    width: auto;
+    height: 396px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
+  }
 }

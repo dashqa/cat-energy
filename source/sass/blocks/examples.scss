@@ -1,5 +1,11 @@
 .examples {
   background-color: $bg-grey;
+
+  @media (min-width: $tablet) {
+    background-color: $white;
+    border-top: 1px solid $border;
+  }
+
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
@@ -17,7 +23,11 @@
   font-size: 36px;
   line-height: 60px;
   color: $black;
+
   @media (min-width: $tablet) {
+    margin: 0;
+    padding-top: 44px;
+    padding-bottom: 64px;
     font-size: 60px;
   }
 }
@@ -29,7 +39,9 @@
   font-size: 14px;
   font-family: $arial;
   color: $grey;
+
   @media (min-width: $tablet) {
+    padding-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -42,23 +54,28 @@
   justify-content: space-between;
   margin-bottom: 35px;
   text-align: center;
-}
 
-.examples__info {
   @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 73px;
   }
 }
 
 .examples__item {
   position: relative;
   text-align: center;
+
   &--cost {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
     padding-left: 45px;
+
+    @media (min-width: $tablet) {
+      margin-left: 106px;
+      padding: 0;
+      padding-top: 12px;
+      text-align: right;
+    }
   }
 }
 
@@ -72,20 +89,33 @@
   text-transform: uppercase;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
   &--cost {
     display: inline;
     padding: 0;
     padding-top: 15px;
-    border: none;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
+    border: none;
+
     @media (min-width: $tablet) {
       font-size: 20px;
     }
   }
+
   @media (min-width: $tablet) {
+    width: 160px;
+    height: 72px;
+    margin: 0;
+    padding-top: 22px;
     font-size: 30px;
+
+    &--cost {
+      @include indent-reset;
+      width: 192px;
+      font-size: 20px;
+    }
   }
 }
 
@@ -102,6 +132,17 @@
   font-family: $arial;
   text-align: center;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet) {
+    top: 63px;
+    right: 16px;
+    width: 128px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+  }
+
   &--cost {
     position: static;
     width: auto;
@@ -109,17 +150,18 @@
     padding-left: 3px;
     font-size: 14px;
     line-height: 20px;
-    background-color: transparent;
     font-family: $oswald;
     color: $black;
     text-transform: uppercase;
+    background-color: transparent;
+
     @media (min-width: $tablet) {
+      @include indent-reset;
+      position: absolute;
+      top: 41px;
+      right: 0;
       font-size: 20px;
+      text-align: right;
     }
   }
-  @media (min-width: $tablet) {
-    font-size: 14px;
-    line-height: 14px;
-  }
 }
-

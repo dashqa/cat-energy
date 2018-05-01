@@ -13,7 +13,11 @@
     <div class="container">
       <nav class="main-nav main-nav--closed">
         <a class="main-nav__logo">
-          <img class="main-nav___icon" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип Кэт энерджи">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-nav___icon" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип Кэт энерджи">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -46,7 +50,14 @@
         <p class="promo__text">Занялся собой? Займись котом!</p>
         <a href="form.html" class="btn btn--green btn--promo">Подобрать программу</a>
       </div>
-      <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Пример продукции" class="promo__image">
+      <picture>
+        <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
+        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+        <img src="img/index-can-mobile@1x.png" class="promo__image" srcset="img/index-can-mobile@2x.png 2x" alt="Пример продукции">
+      </picture>
     </section>
     <section class="catalog">
       <div class="container">
@@ -54,13 +65,13 @@
         <ul class="catalog__list">
           <li class="catalog__item catalog__item--slim">
             <strong class="catalog__subtitle">Похудение</strong>
-            <p class="catalog__text">Ваш кот весит больше собаки и почти утратил способность лазить по деверьям? Пора на диету! Cat Energy Slim поможет
+            <p class="catalog__text catalog__text--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деверьям? Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.</p>
             <a href="catalog.html#product" class="catalog__link">Каталог Slim</a>
           </li>
           <li class="catalog__item catalog__item--pro">
             <strong class="catalog__subtitle">Набор массы</strong>
-            <p class="catalog__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
+            <p class="catalog__text catalog__text--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
               мышцы!
             </p>
             <a href="catalog.html#product" class="catalog__link">Каталог Pro</a>
@@ -113,8 +124,23 @@
       </div>
       <div class="examples__slider slider">
         <div class="slider__images">
-          <img class="slider__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Фото кота: было">
-          <img class="slider__image" src="img/after-mobile@1x.png" width="320" height="240" alt="Фото кота: стало">
+          <picture class="slider__box">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+            <img src="img/before-mobile@1x.png" class="slider__image" srcset="img/before-mobile@2x.png 2x" alt="Фото кота: было">
+          </picture>
+
+          <picture class="slider__box">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+            <img src="img/after-mobile@1x.png" class="slider__image" srcset="img/after-mobile@2x.png 2x" alt="Фото кота: стало">
+          </picture>
         </div>
         <div class="container">
           <div class="slider__controls">
@@ -136,43 +162,55 @@
           <p class="coordinates__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </div>
-      <div class="coordinates__map" aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></div>
+      <div class="coordinates__map" aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <iframe src="https://snazzymaps.com/embed/68199" width="100%" height="400px" style="border:none;">
+        </iframe>
+      </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="container">
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
-        <img class="page-footer__text-icon" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
+  <footer class="page-footer container">
+    <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
+      <img class="page-footer__text-icon" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
+    </a>
+    <div class="page-footer__social">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a href="https://vk.com/htmlacademy" target="_blank" class="page-footer__link">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/icon-vk.svg" width="30" height="16">
+              <img class="page-footer__sn page-footer__sn--vk" src="img/icon-vk-mobile.svg" width="22" height="12" alt="Вконтакте">
+            </picture>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a href="https://www.instagram.com/htmlacademy" target="_blank" class="page-footer__link">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/icon-insta.svg" width="23" height="23">
+              <img class="page-footer__sn page-footer__sn--inst" src="img/icon-insta-mobile.svg" width="16" height="16" alt="Инстаграм">
+            </picture>
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a href="https://www.facebook.com/htmlacademy" target="_blank" class="page-footer__link">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/icon-fb.svg" width="14" height="28">
+              <img class="page-footer__sn page-footer__sn--fb" src="img/icon-fb-mobile.svg" width="10" height="19" alt="Фейсбук">
+            </picture>
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright">
+      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
+        <span class="page-footer__copy-text">HTML Academy</span>
+        <img class="page-footer__copy-icon" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
       </a>
-      <div class="page-footer__social">
-        <ul class="page-footer__list">
-          <li class="page-footer__item">
-            <a href="https://vk.com/htmlacademy" target="_blank" class="page-footer__link page-footer__link--vk">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="page-footer__item">
-            <a href="https://www.instagram.com/htmlacademy" target="_blank" class="page-footer__link page-footer__link--insta">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li class="page-footer__item">
-            <a href="https://www.facebook.com/htmlacademy" target="_blank" class="page-footer__link page-footer__link--fb">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
-          <span class="page-footer__copy-text">HTML Academy</span>
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" class="page-footer__icon">
-        </a>
-      </div>
     </div>
   </footer>
   <script src="js/script.js"></script>
 </body>
 
 </html>
-

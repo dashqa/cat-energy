@@ -1,5 +1,12 @@
 .show-more {
   flex-direction: column;
+
+  @media (min-width: $tablet) {
+    min-height: 434px;
+    margin-top: auto;
+    background-image: none;
+    border: 1px solid #f2f2f2;
+  }
 }
 
 .show-more__subtitle {
@@ -13,6 +20,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    @include indent-reset;
+    width: 135px;
+    margin-bottom: 28px;
     font-size: 20px;
   }
 }
@@ -28,6 +38,9 @@
   color: $grey;
 
   @media (min-width: $tablet) {
+    @include indent-reset;
+    width: 170px;
+    margin-bottom: 62px;
     font-size: 16px;
   }
 }
@@ -36,5 +49,16 @@
   width: 30px;
   height: 30px;
   margin: 25px auto 26px;
-  opacity: .2;
+  background-image: url("../img/icon-plus-mobile.svg");
+  cursor: pointer;
+  opacity: 0.2;
+
+  @media (min-width: $tablet) {
+    @include indent-reset;
+    width: 60px;
+    height: 60px;
+    margin-top: 54px;
+    margin-bottom: 49px;
+    background: url("../img/icon-plus.svg") no-repeat center center;
+  }
 }

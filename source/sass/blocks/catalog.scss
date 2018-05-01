@@ -1,10 +1,13 @@
 .catalog__list {
   @include list-reset;
-  @media (min-width: $desktop) {
+
+  @media (min-width: $tablet) {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
+
+  @media (min-width: $desktop) {}
 }
 
 .catalog__subtitle {
@@ -16,7 +19,11 @@
   line-height: 37px;
   color: $black;
   text-transform: uppercase;
+
   @media (min-width: $tablet) {
+    padding-top: 75px;
+    padding-bottom: 25px;
+    padding-left: 53px;
     font-size: 36px;
     line-height: 37px;
   }
@@ -28,9 +35,17 @@
   font-size: 14px;
   font-family: $arial;
   color: $grey;
+
   @media (min-width: $tablet) {
+    padding-right: 280px;
+    padding-bottom: 58px;
+    padding-left: 52px;
     font-size: 16px;
     line-height: 24px;
+
+    &--pro {
+      padding-right: 312px;
+    }
   }
 }
 
@@ -42,17 +57,25 @@
   line-height: 16px;
   color: $black;
   text-transform: uppercase;
+
   &::before {
+    content: "";
     position: absolute;
     left: 102px;
-    content: "";
-    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
     width: 24px;
     height: 11px;
-    margin-left: 14px;
     margin-top: 3px;
+    margin-left: 14px;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
+
+    @media (min-width: $tablet) {
+      margin-left: 80px;
+    }
   }
+
   @media (min-width: $tablet) {
+    padding-bottom: 62px;
+    padding-left: 53px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -61,41 +84,73 @@
 .catalog__item {
   position: relative;
   background-color: $bg-grey;
+
   &::before {
+    content: "";
     position: absolute;
     top: 25px;
     left: 23px;
-    content: "";
     width: 50px;
     height: 50px;
-    border-radius: 50%;
     background-color: $green;
+    border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      top: 91px;
+      right: 60px;
+      left: auto;
+      width: 200px;
+      height: 200px;
+    }
   }
+
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 29px;
+    }
   }
 
   &--slim,
   &--pro {
+
     &::after {
-      position: absolute;
       content: "";
+      position: absolute;
       background-repeat: no-repeat;
     }
   }
+
   &--slim::after {
     top: 23px;
     left: 30px;
     width: 50px;
     height: 50px;
     background-image: url("../img/icon-cat-slim.svg");
+
+    @media (min-width: $tablet) {
+      top: 80px;
+      right: 92px;
+      left: auto;
+      width: 140px;
+      height: 194px;
+    }
   }
+
   &--pro::after {
     top: 35px;
     left: 12px;
     width: 70px;
     height: 60px;
     background-image: url("../img/icon-cat-pro.svg");
+
+    @media (min-width: $tablet) {
+      top: 135px;
+      right: 28px;
+      left: auto;
+      width: 268px;
+      height: 112px;
+    }
   }
 }
-

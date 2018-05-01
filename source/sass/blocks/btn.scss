@@ -27,6 +27,10 @@
     line-height: 18px;
 
     @media (min-width: $tablet) {
+      margin: 0;
+      margin-top: 48px;
+      margin-right: 286px;
+      padding: 15px 29px 17px 26px;
       font-size: 20px;
       line-height: 20px;
     }
@@ -34,11 +38,43 @@
 
   &--product {
     width: 100%;
+
+    @media (min-width: $tablet) {
+      width: auto;
+      margin: 24px 21px 17px 21px;
+      padding: 9px 94px;
+    }
+  }
+
+  &--show-more {
+
+    @media (min-width: $tablet) {
+      padding: 9.5px 80px;
+    }
+  }
+
+  &--addit {
+
+    @media (min-width: $tablet) {
+      @include indent-reset;
+      width: 100%;
+      height: 42px;
+      margin-top: 14px;
+      padding: 10px;
+    }
   }
 
   &--form {
     width: 100%;
     margin-bottom: 23px;
     border: 0;
+
+    @media (min-width: $tablet) {
+      width: auto;
+      margin: 0;
+      margin-left: 39px;
+      padding: 16px 65px;
+      font-size: 20px;
+    }
   }
 }
