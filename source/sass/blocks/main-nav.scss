@@ -19,7 +19,6 @@
 
   &--opened {
     .main-nav__toggle-bar {
-
       &--top {
         transform: rotate(45deg);
       }
@@ -41,7 +40,6 @@
 
   &--closed {
     .main-nav__toggle-bar {
-
       &--top {
         top: 10px;
         transform-origin: left center;
@@ -76,6 +74,7 @@
     font-size: 18px;
     line-height: 24px;
     color: $blackish;
+
     .main-nav__wrapper {
       display: block;
     }
@@ -88,7 +87,6 @@
 }
 
 .main-nav__wrapper {
-
   @media (min-width: $tablet) {
     margin-top: 42px;
   }

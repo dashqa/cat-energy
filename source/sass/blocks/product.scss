@@ -15,7 +15,6 @@
 }
 
 .product__image {
-
   @media (min-width: $tablet) {
     display: flex;
     justify-content: center;
@@ -60,6 +59,7 @@
     width: calc(100% + 40px);
     height: 1px;
     background-color: $border;
+
     @media (min-width: $tablet) {
       display: none;
     }
@@ -101,9 +101,7 @@
 }
 
 .product__row {
-
   @media (min-width: $tablet) {
-    display: block;
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
@@ -113,7 +111,6 @@
 }
 
 .product__cell {
-
   &:not(:nth-last-of-type(2n)) {
     text-align: end;
   }

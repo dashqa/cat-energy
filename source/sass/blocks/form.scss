@@ -111,7 +111,6 @@
   }
 
   &--radio-field {
-
     &:nth-child(1) {
       margin-bottom: 26px;
 
@@ -130,7 +129,6 @@
   }
 
   &--checkbox-field {
-
     &:nth-child(1) {
       margin-bottom: 25px;
 
@@ -299,13 +297,12 @@
   }
 }
 
-.form__input--radio-field:checked~.form__label--radio-field::after,
-.form__input--checkbox-field:checked~.form__label--checkbox-field::after {
+.form__input--radio-field:checked ~ .form__label--radio-field::after,
+.form__input--checkbox-field:checked ~ .form__label--checkbox-field::after {
   transform: scale(1);
 }
 
 .form__wrap-for-desktop {
-
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
@@ -398,7 +395,6 @@
   }
 
   &::before {
-
     @media (min-width: $tablet) {
       content: "";
       display: inline-block;
@@ -445,7 +441,6 @@
 }
 
 .form__submit-box {
-
   @media (min-width: $tablet) {
     display: flex;
     align-items: center;

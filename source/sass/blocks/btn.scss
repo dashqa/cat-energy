@@ -47,14 +47,12 @@
   }
 
   &--show-more {
-
     @media (min-width: $tablet) {
       padding: 9.5px 80px;
     }
   }
 
   &--addit {
-
     @media (min-width: $tablet) {
       @include indent-reset;
       width: 100%;

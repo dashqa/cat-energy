@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet) {
     padding-bottom: 48px;
-    background-image: linear-gradient(to top,#f2f2f2 75%,#ffffff 25%);
+    background-image: linear-gradient(to top, #f2f2f2 75%, #ffffff 25%);
   }
 }
 
@@ -67,7 +67,6 @@
 }
 
 .slider__images {
-
   @media (min-width: $tablet) {
   }
 }
@@ -85,7 +84,6 @@
   border-radius: 3px;
 
   &--1 {
-
     @media (min-width: $tablet) {
       position: relative;
       top: -18px;
@@ -99,7 +97,6 @@
       cursor: pointer;
 
       &::before {
-
         @media (min-width: $tablet) {
           content: "";
           position: absolute;
@@ -135,7 +132,6 @@
     }
 
     &::before {
-
       @media (min-width: $tablet) {
         content: "";
         position: absolute;
