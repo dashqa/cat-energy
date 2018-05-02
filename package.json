@@ -39,6 +39,8 @@
     "node": "8.11"
   },
   "dependencies": {
+    "imagemin": "^5.3.1",
+    "imagemin-webp": "^4.1.0",
     "npm": "^5.8.0"
   }
 }
