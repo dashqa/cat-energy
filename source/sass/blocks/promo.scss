@@ -1,6 +1,5 @@
 .promo {
   position: relative;
-
   &::before {
     content: "";
     position: absolute;
@@ -12,20 +11,34 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 320px 305px;
-
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/index-background-mobile@2x.jpg");
     }
-
     @media (min-width: $tablet) {
       display: flex;
       flex-direction: column;
       background-color: transparent;
       background-image: none;
     }
-
+  }
+  &::after {
     @media (min-width: $desktop) {
-      background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($bg-green 305px, transparent 305px);
+      display: block;
+      content: "";
+      position: absolute;
+      top: -40%;
+      left: 50%;
+      width: 720px;
+      height: 696px;
+      background-color: $bg-green;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: -10;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -33,29 +46,34 @@
 .promo__wrapper {
   text-align: center;
   color: $white;
-
   @media (min-width: $tablet) {
     width: 770px;
+    margin-left: 117px;
+    text-align: start;
   }
 }
 
 .promo__subtitle {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   padding-top: 27px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-
   @media (min-width: $tablet) {
     width: 415px;
     margin-top: 18px;
     margin-bottom: 39px;
-    margin-left: 117px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: $black;
+  }
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin-top: 109px;
+    margin-left: 3px;
+    margin-bottom: 42px;
   }
 }
 
@@ -65,13 +83,15 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-
   @media (min-width: $tablet) {
-    margin-left: 117px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: $black;
+  }
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin-left: 4px;
   }
 }
 
@@ -81,10 +101,23 @@
   bottom: 63px;
   left: 0;
   margin: 0 auto;
-
   @media (min-width: $tablet) {
     position: static;
     margin-top: -81px;
     margin-left: 29px;
   }
+  @media (min-width: $desktop) {
+    position: absolute;
+    @include indent-reset;
+    left: auto;
+    right: 258px;
+    bottom: 136px;
+  }
 }
+
+.promo__programm {
+  @media (min-width: $desktop){
+  height: 555px;
+}
+}
+

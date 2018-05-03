@@ -4,6 +4,7 @@
   font-size: 36px;
   line-height: 60px;
   color: $black;
+  overflow: hidden;
 
   &--catalog-page,
   &--form-page {
@@ -17,7 +18,7 @@
   }
 
   &--catalog-page {
-    padding-bottom: 27px;
+    padding-bottom: 29px;
     border-top: 1px solid $border;
     border-bottom: 1px solid $border;
   }
