@@ -6,6 +6,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 71px;
+  }
 }
 
 .catalog__subtitle {
@@ -21,9 +25,16 @@
   @media (min-width: $tablet) {
     padding-top: 75px;
     padding-bottom: 25px;
-    padding-left: 53px;
+    padding-left: 0;
     font-size: 36px;
     line-height: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    word-wrap: break-word;
+    margin: 0;
+    padding: 75px 0;
+    padding-left: 160px;
   }
 }
 
@@ -36,8 +47,8 @@
 
   @media (min-width: $tablet) {
     padding-right: 280px;
-    padding-bottom: 58px;
-    padding-left: 52px;
+    padding-bottom: 57px;
+    padding-left: 0;
     font-size: 16px;
     line-height: 24px;
 
@@ -45,11 +56,17 @@
       padding-right: 312px;
     }
   }
+
+  @media (min-width: $desktop) {
+    @include indent-reset;
+    padding-bottom: 32px;
+    width: 465px;
+  }
 }
 
 .catalog__link {
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
   padding-left: 20px;
   font-size: 16px;
   line-height: 16px;
@@ -59,29 +76,41 @@
   &::before {
     content: "";
     position: absolute;
-    left: 102px;
+    top: 4px;
+    left: 116px;
     width: 24px;
     height: 11px;
-    margin-top: 3px;
-    margin-left: 14px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
 
     @media (min-width: $tablet) {
-      margin-left: 80px;
+      left: 128px;
     }
   }
 
   @media (min-width: $tablet) {
-    padding-bottom: 62px;
-    padding-left: 53px;
+    padding: 0;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
   }
 }
 
 .catalog__item {
   position: relative;
   background-color: $bg-grey;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 62px;
+    padding-left: 53px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 53px;
+    padding-left: 52px;
+  }
 
   &::before {
     content: "";
@@ -100,6 +129,13 @@
       width: 200px;
       height: 200px;
     }
+
+    @media (min-width: $desktop) {
+      left: 52px;
+      top: 47px;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &:not(:last-child) {
@@ -107,6 +143,10 @@
 
     @media (min-width: $tablet) {
       margin-bottom: 29px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0;
     }
   }
 
@@ -133,6 +173,13 @@
       width: 140px;
       height: 194px;
     }
+
+    @media (min-width: $desktop) {
+      width: 70px;
+      height: 97px;
+      left: 66px;
+      top: 41px;
+    }
   }
 
   &--pro::after {
@@ -148,6 +195,13 @@
       left: auto;
       width: 268px;
       height: 112px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 34px;
+      top: 69px;
+      width: 134px;
+      height: 56px;
     }
   }
 }

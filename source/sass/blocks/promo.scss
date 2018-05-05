@@ -46,10 +46,14 @@
 .promo__wrapper {
   text-align: center;
   color: $white;
+
   @media (min-width: $tablet) {
     width: 770px;
     margin-left: 117px;
     text-align: start;
+  }
+  @media (min-width: $desktop) {
+    margin-top: 107px;
   }
 }
 
@@ -62,8 +66,8 @@
   line-height: 36px;
   @media (min-width: $tablet) {
     width: 415px;
-    margin-top: 18px;
-    margin-bottom: 39px;
+    margin-top: 16px;
+    margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -71,8 +75,7 @@
   }
   @media (min-width: $desktop) {
     padding: 0;
-    margin-top: 109px;
-    margin-left: 3px;
+    margin-left: 2px;
     margin-bottom: 42px;
   }
 }
@@ -91,7 +94,7 @@
   }
   @media (min-width: $desktop) {
     padding: 0;
-    margin-left: 4px;
+    margin-left: 3px;
   }
 }
 
@@ -110,7 +113,7 @@
     position: absolute;
     @include indent-reset;
     left: auto;
-    right: 258px;
+    right: 260px;
     bottom: 136px;
   }
 }

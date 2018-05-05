@@ -40,8 +40,12 @@
   @media (min-width: $tablet) {
     @include indent-reset;
     width: 170px;
-    margin-bottom: 62px;
+    margin-bottom: 58px;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 18px;
   }
 }
 
@@ -60,5 +64,10 @@
     margin-top: 54px;
     margin-bottom: 49px;
     background: url("../img/icon-plus.svg") no-repeat center center;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 57px;
+    margin-bottom: 47px;
   }
 }

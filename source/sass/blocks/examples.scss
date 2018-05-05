@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff 173px,#f2f2f2 173px);
   }
 }
 
@@ -30,6 +32,17 @@
     padding-bottom: 64px;
     font-size: 60px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    padding-bottom: 147px;
+  }
+}
+
+.examples__info {
+  @media (min-width: $desktop) {
+    margin-right: 168px;
+  }
 }
 
 .examples__description {
@@ -45,6 +58,12 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop) {
+    width: 438px;
+    padding: 0;
+    padding-bottom: 68px;
+  }
 }
 
 .examples__list {
@@ -57,6 +76,11 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 365px;
+    margin: 0;
   }
 }
 
@@ -71,10 +95,18 @@
     padding-left: 45px;
 
     @media (min-width: $tablet) {
-      margin-left: 106px;
+      margin-right: 31px;
+      margin-left: 107px;
       padding: 0;
       padding-top: 12px;
       text-align: right;
+    }
+
+    @media (min-width: $desktop) {
+      @include indent-reset;
+      padding-top: 61px;
+      width: 326px;
+      text-align: start;
     }
   }
 }
@@ -105,7 +137,7 @@
   }
 
   @media (min-width: $tablet) {
-    width: 160px;
+    width: 162px;
     height: 72px;
     margin: 0;
     padding-top: 22px;
@@ -131,16 +163,20 @@
   line-height: 12px;
   font-family: $arial;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: $bg-grey;
 
   @media (min-width: $tablet) {
-    top: 63px;
-    right: 16px;
+    top: 64px;
+    right: 18px;
     width: 128px;
     padding: 0;
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $bg-grey;
   }
 
   &--cost {
@@ -163,5 +199,13 @@
       font-size: 20px;
       text-align: right;
     }
+
+    @media (min-width: $desktop) {
+      position: static;
+    }
   }
+}
+
+.examples__wrapper {
+  padding-right: 0;
 }

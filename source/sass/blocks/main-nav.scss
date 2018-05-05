@@ -138,7 +138,10 @@
   }
 
   @media (min-width: $desktop) {
+
+    &--index-page {
     color: $white;
+    }
   }
 }
 

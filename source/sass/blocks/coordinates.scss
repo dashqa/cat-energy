@@ -16,6 +16,10 @@
     font-size: 20px;
     line-height: 25px;
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 25px;
+  }
 }
 
 .coordinates__info {
@@ -29,6 +33,13 @@
     width: 195px;
     font-size: 16px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    width: 185px;
+    text-align: start;
+    padding-right: 25px;
+    margin-top: -3px;
   }
 }
 
@@ -48,16 +59,29 @@
     padding-bottom: 62px;
     padding-left: 40px;
   }
+
+  @media (min-width: $desktop) {
+    min-width: auto;
+width: 570px;
+min-height: 200px;
+margin-top: 117px;
+padding-left: 30px;
+padding-top: 66px;
+padding-bottom: 20px;
+background-color: #fff;
+justify-content: space-around;
+position: absolute;
+  }
 }
 
 .coordinates__map {
-  width: auto;
   height: 363px;
   margin: 0 auto;
   background-color: #fdf7f0;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
@@ -65,7 +89,6 @@
   }
 
   @media (min-width: $tablet) {
-    width: auto;
     height: 396px;
     background-image: url("../img/bg-map-tablet@1x.png");
 
@@ -75,6 +98,7 @@
   }
 
   @media (min-width: $desktop) {
+    height: 422px;
     background-image: url("../img/bg-map-desktop@1x.png");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

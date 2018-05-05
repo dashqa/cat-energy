@@ -9,7 +9,12 @@
 
   @media (min-width: $tablet) {
     padding-bottom: 48px;
-    background-image: linear-gradient(to top, #f2f2f2 75%, #ffffff 25%);
+    background-image: linear-gradient(to top, #f2f2f2 73%, #ffffff 27%);
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    background-image: none;
   }
 }
 
@@ -27,6 +32,15 @@
     font-size: 20px;
     color: $black;
     border-bottom: 1px dotted #dcdcdc;
+  }
+}
+
+.slider__image {
+  @media (min-width: $desktop) {
+    position: absolute;
+    content: "";
+    top: -31px;
+    left: -34px;
   }
 }
 
@@ -63,6 +77,12 @@
     width: 571px;
     margin-top: 19px;
     margin-left: -5px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 574px;
+    margin-top: 477px;
+    margin-left: 0;
   }
 }
 
