@@ -1,3 +1,8 @@
+.form {
+  width: 100%;
+  overflow: hidden;
+}
+
 .form__contact,
 .form__radio-btn,
 .form__textarea,
@@ -100,6 +105,7 @@
 
   &--checkbox-field {
     margin-bottom: 41px;
+
     @media (min-width: $tablet) {
       margin-top: 28px;
       margin-right: 31px;
@@ -132,8 +138,18 @@
       }
     }
   }
+
   &--radio-field {
     min-width: 280px;
+    word-wrap: break-word;
+
+    @media (min-width: $tablet) {
+      max-width: 515px;
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 470px;
+    }
 
     &:nth-child(1) {
       margin-bottom: 26px;
@@ -173,6 +189,7 @@
 
   &--checkbox-field {
     min-width: 280px;
+    word-wrap: break-word;
 
     &:nth-child(1) {
       margin-bottom: 25px;
@@ -200,6 +217,10 @@
       @media (min-width: $desktop) {
         margin-bottom: 0;
       }
+    }
+
+    @media (min-width: $tablet) {
+      max-width: 280px;
     }
 
     @media (min-width: $desktop) {
@@ -315,7 +336,7 @@
 
   &--radio-field,
   &--checkbox-field {
-    display: none;
+    @include hidden;
   }
 
   @media (min-width: $tablet) {
@@ -325,11 +346,21 @@
 }
 
 .form__label {
+  max-width: 115px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $blackish;
   text-transform: uppercase;
+  word-wrap: break-word;
+
+  @media (min-width: $tablet) {
+    max-width: 170px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 235px;
+  }
 
   &--radio-field {
     position: relative;
@@ -429,8 +460,8 @@
   }
 }
 
-.form__input--radio-field:checked~.form__label--radio-field::after,
-.form__input--checkbox-field:checked~.form__label--checkbox-field::after {
+.form__input--radio-field:checked ~ .form__label--radio-field::after,
+.form__input--checkbox-field:checked ~ .form__label--checkbox-field::after {
   transform: scale(1);
 }
 
@@ -449,6 +480,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  word-wrap: break-word;
 
   @media (min-width: $tablet) {
     width: 432px;
@@ -645,7 +677,6 @@
 }
 
 .form__submit-box {
-
   @media (min-width: $tablet) {
     display: flex;
     align-items: center;
@@ -671,6 +702,7 @@
       right: 61px;
     }
   }
+
   &--email {
     right: 36px;
 

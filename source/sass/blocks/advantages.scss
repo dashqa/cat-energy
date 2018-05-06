@@ -136,6 +136,7 @@
   padding-left: 80px;
   font-size: 14px;
   font-family: $arial;
+  word-wrap: break-word;
 
   @media (min-width: $tablet) {
     width: 250px;

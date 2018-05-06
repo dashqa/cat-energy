@@ -21,11 +21,11 @@
       padding: 30px;
       padding-top: 42px;
 
-    @media (min-width: $desktop) {
-      padding: 37px;
-      padding-top: 73px;
+      @media (min-width: $desktop) {
+        padding: 37px;
+        padding-top: 73px;
+      }
     }
-  }
   }
 
   &--catalog-page {

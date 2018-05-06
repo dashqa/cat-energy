@@ -7,8 +7,9 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+  word-wrap: break-word;
 
-  &:after {
+  &::after {
     content: "";
     width: 324px;
   }
@@ -138,5 +139,9 @@
 
   &:not(:nth-last-of-type(2n)) {
     text-align: end;
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 140px;
   }
 }

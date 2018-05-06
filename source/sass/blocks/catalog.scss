@@ -16,6 +16,8 @@
   display: block;
   padding: 30px 0;
   padding-left: 92px;
+  max-width: 250px;
+  word-wrap: break-word;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
@@ -31,6 +33,7 @@
   }
 
   @media (min-width: $desktop) {
+    max-width: 465px;
     margin: 0;
     padding: 75px 0;
     padding-left: 160px;

@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-image: linear-gradient(to bottom, #ffffff 136px,#f2f2f2 136px);
+    background-image: linear-gradient(to bottom, #ffffff 136px, #f2f2f2 136px);
     border: none;
   }
 }
@@ -52,6 +52,7 @@
   font-size: 14px;
   font-family: $arial;
   color: $grey;
+  word-wrap: break-word;
 
   @media (min-width: $tablet) {
     padding-bottom: 53px;
