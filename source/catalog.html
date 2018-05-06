@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <div style="display: none;">
+        <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header">
     <div class="container">
       <nav class="main-nav main-nav--closed">
@@ -360,47 +364,57 @@
     </section>
   </main>
   <footer class="page-footer container">
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
-      <img class="page-footer__text-icon" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
-    </a>
-    <div class="page-footer__social">
-      <ul class="page-footer__list">
-        <li class="page-footer__item">
-          <a href="https://vk.com/htmlacademy" target="_blank" class="page-footer__link">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/icon-vk.svg" width="30" height="16">
-              <img class="page-footer__sn page-footer__sn--vk" src="img/icon-vk-mobile.svg" width="22" height="12" alt="Вконтакте">
-            </picture>
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="page-footer__item">
-          <a href="https://www.instagram.com/htmlacademy" target="_blank" class="page-footer__link">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/icon-insta.svg" width="23" height="23">
-              <img class="page-footer__sn page-footer__sn--inst" src="img/icon-insta-mobile.svg" width="16" height="16" alt="Инстаграм">
-            </picture>
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
-        <li class="page-footer__item">
-          <a href="https://www.facebook.com/htmlacademy" target="_blank" class="page-footer__link">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/icon-fb.svg" width="14" height="28">
-              <img class="page-footer__sn page-footer__sn--fb" src="img/icon-fb-mobile.svg" width="10" height="19" alt="Фейсбук">
-            </picture>
-            <span class="visually-hidden">Фейсбук</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
-        <span class="page-footer__copy-text">HTML Academy</span>
-        <img class="page-footer__copy-icon" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
+        <img class="page-footer__text-icon" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
-    </div>
-  </footer>
+      <div class="page-footer__social">
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a href="https://vk.com/htmlacademy" target="_blank" class="page-footer__link">
+              <svg class="page-footer__vk page-footer__vk--small" width="22" height="12">
+                <use xlink:href="#icon-vk-mobile"></use>
+              </svg>
+              <svg class="page-footer__vk page-footer__vk--big" width="30" height="16">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="https://www.instagram.com/htmlacademy" target="_blank" class="page-footer__link">
+              <svg class="page-footer__inst page-footer__inst--small" width="16" height="16">
+                <use xlink:href="#icon-insta-mobile"></use>
+              </svg>
+              <svg class="page-footer__inst page-footer__inst--big" width="23" height="23">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="https://www.facebook.com/htmlacademy" target="_blank" class="page-footer__link">
+              <svg class="page-footer__fb page-footer__fb--small" width="10" height="19">
+                <use xlink:href="#icon-fb-mobile"></use>
+              </svg>
+              <svg class="page-footer__fb page-footer__fb--big" width="14" height="28">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
+          <span class="page-footer__copy-text">HTML Academy</span>
+          <svg class="page-footer__icon" width="27" height="34">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.js" defer></script>
   <script src="js/script.js"></script>
 </body>
 

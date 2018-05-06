@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <div style="display: none;">
+        <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header">
     <div class="container">
       <nav class="main-nav main-nav--closed">
@@ -95,13 +99,17 @@
                 <label for="user-email" class="form__label form__label--text-field form__label--user">E-mail:*</label>
                 <input type="email" id="user-email" name="user-name" class="form__input form__input--text-field form__input--user form__input--email"
                   placeholder="kuklachev@gmail.com">
-                <img class="form__icon form__icon--email" src="img/icon-mail.svg" width="17" height="17" alt="Почтовый адрес">
+                <svg class="form__email-icon" width="17" height="13">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
               </li>
               <li class="form__item form__item--text-field form__item--user">
                 <label for="user-tel" class="form__label form__label--text-field form__label--user">Телефон:*</label>
                 <input type="tel" id="user-tel" name="user-tel" class="form__input form__input--text-field form__input--user form__input--tel"
                   placeholder="8 (960) 900-60-90">
-                <img class="form__icon form__icon--tel" src="img/icon-phone.svg" width="20" height="20" alt="Номер телефона">
+                <svg class="form__tel-icon" width="20" height="20">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
               </li>
             </ul>
           </fieldset>
@@ -167,28 +175,34 @@
       <ul class="page-footer__list">
         <li class="page-footer__item">
           <a href="https://vk.com/htmlacademy" target="_blank" class="page-footer__link">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/icon-vk.svg" width="30" height="16">
-              <img class="page-footer__sn page-footer__sn--vk" src="img/icon-vk-mobile.svg" width="22" height="12" alt="Вконтакте">
-            </picture>
+            <svg class="page-footer__vk page-footer__vk--small" width="22" height="12">
+              <use xlink:href="#icon-vk-mobile"></use>
+            </svg>
+            <svg class="page-footer__vk page-footer__vk--big" width="30" height="16">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="page-footer__item">
           <a href="https://www.instagram.com/htmlacademy" target="_blank" class="page-footer__link">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/icon-insta.svg" width="23" height="23">
-              <img class="page-footer__sn page-footer__sn--inst" src="img/icon-insta-mobile.svg" width="16" height="16" alt="Инстаграм">
-            </picture>
+            <svg class="page-footer__inst page-footer__inst--small" width="16" height="16">
+              <use xlink:href="#icon-insta-mobile"></use>
+            </svg>
+            <svg class="page-footer__inst page-footer__inst--big" width="23" height="23">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
         <li class="page-footer__item">
           <a href="https://www.facebook.com/htmlacademy" target="_blank" class="page-footer__link">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/icon-fb.svg" width="14" height="28">
-              <img class="page-footer__sn page-footer__sn--fb" src="img/icon-fb-mobile.svg" width="10" height="19" alt="Фейсбук">
-            </picture>
+            <svg class="page-footer__fb page-footer__fb--small" width="10" height="19">
+              <use xlink:href="#icon-fb-mobile"></use>
+            </svg>
+            <svg class="page-footer__fb page-footer__fb--big" width="14" height="28">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
@@ -197,11 +211,16 @@
     <div class="page-footer__copyright">
       <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
         <span class="page-footer__copy-text">HTML Academy</span>
-        <img class="page-footer__copy-icon" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        <svg class="page-footer__icon" width="27" height="34">
+          <use xlink:href="#htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.js" defer></script>
   <script src="js/script.js"></script>
 </body>
 
 </html>
+
