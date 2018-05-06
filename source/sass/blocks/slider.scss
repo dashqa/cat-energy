@@ -37,8 +37,8 @@
 
 .slider__image {
   @media (min-width: $desktop) {
-    position: absolute;
     content: "";
+    position: absolute;
     top: -31px;
     left: -34px;
   }

@@ -47,21 +47,24 @@
       <div class="container">
         <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="POST">
-          <div class="form__wrap-for-desktop">
+          <div class="form__group">
             <fieldset class="form__contact">
               <legend class="visually-hidden">Информация о вашем коте</legend>
               <ul class="form__list form__list--cat-info">
-                <li class="form__item form__item--text-field">
-                  <label for="cat-name" class="form__label form__label--text-field">Имя:*</label>
-                  <input type="text" id="cat-name" name="cat-name" class="form__input form__input--text-field" placeholder="Барсик" pattern="^[a-zA-Z]+$">
+                <li class="form__item form__item--text-field form__item--cat">
+                  <label for="cat-name" class="form__label form__label--text-field form__label--cat">Имя:*</label>
+                  <input type="text" id="cat-name" name="cat-name" class="form__input form__input--text-field form__input--cat form__input--name"
+                    placeholder="Барсик" pattern="^[a-zA-Z]+$">
                 </li>
-                <li class="form__item form__item--text-field">
-                  <label for="cat-weight" class="form__label form__label--text-field">Вес (кг):*</label>
-                  <input type="text" id="cat-weight" name="cat-weight" class="form__input form__input--text-field" placeholder="7" pattern="^[ 0-9]+$">
+                <li class="form__item form__item--text-field form__item--cat">
+                  <label for="cat-weight" class="form__label form__label--text-field form__label--cat">Вес (кг):*</label>
+                  <input type="text" id="cat-weight" name="cat-weight" class="form__input form__input--text-field form__input--cat form__input--weight"
+                    placeholder="7" pattern="^[ 0-9]+$">
                 </li>
-                <li class="form__item form__item--text-field">
-                  <label for="cat-age" class="form__label form__label--text-field">Возраст (лет):</label>
-                  <input type="text" id="cat-age" name="cat-age" class="form__input form__input--text-field" placeholder="7" pattern="^[ 0-9]+$">
+                <li class="form__item form__item--text-field form__item--cat">
+                  <label for="cat-age" class="form__label form__label--text-field form__label--cat">Возраст (лет):</label>
+                  <input type="text" id="cat-age" name="cat-age" class="form__input form__input--text-field form__input--cat form__input--age"
+                    placeholder="7" pattern="^[ 0-9]+$">
                 </li>
               </ul>
             </fieldset>
@@ -83,26 +86,34 @@
               </ul>
             </fieldset>
           </div>
-          <h2 class="form__title form__title--user">Контактные данные (владельца кота)</h2>
+          <div class="form__title-wrapper">
+            <h2 class="form__title form__title--user">Контактные данные (владельца кота)</h2>
+          </div>
           <fieldset class="form__contact">
             <ul class="form__list form__list--user">
               <li class="form__item form__item--text-field form__item--user">
                 <label for="user-email" class="form__label form__label--text-field form__label--user">E-mail:*</label>
-                <input type="email" id="user-email" name="user-name" class="form__input form__input--text-field form__input--user" placeholder="kuklachev@gmail.com">
+                <input type="email" id="user-email" name="user-name" class="form__input form__input--text-field form__input--user form__input--email"
+                  placeholder="kuklachev@gmail.com">
                 <img class="form__icon form__icon--email" src="img/icon-mail.svg" width="17" height="17" alt="Почтовый адрес">
               </li>
               <li class="form__item form__item--text-field form__item--user">
                 <label for="user-tel" class="form__label form__label--text-field form__label--user">Телефон:*</label>
-                <input type="tel" id="user-tel" name="user-tel" class="form__input form__input--text-field form__input--user" placeholder="8 (960) 900-60-90">
+                <input type="tel" id="user-tel" name="user-tel" class="form__input form__input--text-field form__input--user form__input--tel"
+                  placeholder="8 (960) 900-60-90">
                 <img class="form__icon form__icon--tel" src="img/icon-phone.svg" width="20" height="20" alt="Номер телефона">
               </li>
             </ul>
           </fieldset>
-          <h2 class="form__title form__title--comment">Комментарий</h2>
+          <div class="form__title-wrapper">
+            <h2 class="form__title form__title--comment">Комментарий</h2>
+          </div>
           <fieldset class="form__textarea">
             <textarea class="form__textarea-msg" name="user-msg" id="user-msg" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <h2 class="form__title form__title--extra">Дополнительно</h2>
+          <div class="form__title-wrapper">
+            <h2 class="form__title form__title--extra">Дополнительно</h2>
+          </div>
           <fieldset class="form__checkbox-field">
             <legend class="visually-hidden">Выберите дополительную информацию</legend>
             <ul class="form__list form__list--checkbox-field">
@@ -118,7 +129,7 @@
                 <input type="checkbox" name="checkbox-group" id="filter-milk" class="form__input form__input--checkbox-field">
                 <label for="filter-milk" class="form__label form__label--checkbox-field">Молоко</label>
               </li>
-              <li class="form__item form__item--pick-field">
+              <li class="form__item form__item--checkbox-field">
                 <input type="checkbox" name="checkbox-group" id="filter-vitamins" class="form__input form__input--checkbox-field">
                 <label for="filter-vitamins" class="form__label form__label--checkbox-field">Витамины</label>
               </li>
@@ -137,11 +148,13 @@
         <div class="coordinates__contact">
           <h2 class="coordinates__title">Приглашаем
             <br>к сотрудничеству дилеров!</h2>
-          <p class="coordinates__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="coordinates__info">ул. Большая Конюшенная, д. 19/8
+            <span class="coordinates__span">Санкт-Петербург</span>
+          </p>
         </div>
       </div>
       <div class="coordinates__map" aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <iframe src="https://snazzymaps.com/embed/68199" width="100%" height="400px" style="border:none;">
+        <iframe src="https://snazzymaps.com/embed/68199" width="100%" height="422px" style="border:none;">
         </iframe>
       </div>
     </section>

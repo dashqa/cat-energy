@@ -10,8 +10,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-image: linear-gradient(to bottom, #ffffff 136px,#f2f2f2 136px);
     border: none;
-    background-image: linear-gradient(to bottom, #ffffff 173px,#f2f2f2 173px);
   }
 }
 
@@ -95,7 +95,6 @@
     padding-left: 45px;
 
     @media (min-width: $tablet) {
-      margin-right: 31px;
       margin-left: 107px;
       padding: 0;
       padding-top: 12px;
@@ -104,8 +103,8 @@
 
     @media (min-width: $desktop) {
       @include indent-reset;
-      padding-top: 61px;
       width: 326px;
+      padding-top: 61px;
       text-align: start;
     }
   }
@@ -207,5 +206,7 @@
 }
 
 .examples__wrapper {
-  padding-right: 0;
+  @media (min-width: $desktop) {
+    padding-right: 0;
+  }
 }

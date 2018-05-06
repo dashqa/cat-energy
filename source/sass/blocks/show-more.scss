@@ -12,7 +12,7 @@
 .show-more__subtitle {
   display: block;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -22,7 +22,7 @@
   @media (min-width: $tablet) {
     @include indent-reset;
     width: 135px;
-    margin-bottom: 28px;
+    margin-bottom: 27px;
     font-size: 20px;
   }
 }
@@ -30,7 +30,7 @@
 .show-more__text {
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -52,7 +52,7 @@
 .show-more__link {
   width: 30px;
   height: 30px;
-  margin: 25px auto 26px;
+  margin: 27px auto 23px;
   background-image: url("../img/icon-plus-mobile.svg");
   cursor: pointer;
   opacity: 0.2;

@@ -15,7 +15,7 @@
   &--catalog-page,
   &--form-page {
     padding: 20px;
-    padding-top: 13px;
+    padding-top: 14px;
 
     @media (min-width: $tablet) {
       padding: 30px;
@@ -44,6 +44,11 @@
 
     @media (min-width: $tablet) {
       padding-bottom: 54px;
+    }
+
+    @media (min-width: $desktop) {
+      border: none;
+      padding-bottom: 56px;
     }
   }
 }

@@ -72,8 +72,14 @@
     @media (min-width: $tablet) {
       @include indent-reset;
       width: 100%;
-      margin-top: 10px;
+      margin-top: 23px;
       padding: 10px;
+    }
+
+    @media (min-width: $desktop) {
+      @include indent-reset;
+      width: auto;
+      padding: 10px 93px;
     }
   }
 
@@ -88,6 +94,11 @@
       margin-left: 39px;
       padding: 16px 65px;
       font-size: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 0;
+      padding: 16px 207px;
     }
   }
 }

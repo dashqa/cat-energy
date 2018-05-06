@@ -31,10 +31,10 @@
   }
 
   @media (min-width: $desktop) {
-    word-wrap: break-word;
     margin: 0;
     padding: 75px 0;
     padding-left: 160px;
+    word-wrap: break-word;
   }
 }
 
@@ -59,8 +59,8 @@
 
   @media (min-width: $desktop) {
     @include indent-reset;
-    padding-bottom: 32px;
     width: 465px;
+    padding-bottom: 32px;
   }
 }
 
@@ -131,8 +131,8 @@
     }
 
     @media (min-width: $desktop) {
-      left: 52px;
       top: 47px;
+      left: 52px;
       width: 100px;
       height: 100px;
     }
@@ -175,10 +175,10 @@
     }
 
     @media (min-width: $desktop) {
+      top: 41px;
+      left: 66px;
       width: 70px;
       height: 97px;
-      left: 66px;
-      top: 41px;
     }
   }
 
@@ -198,8 +198,8 @@
     }
 
     @media (min-width: $desktop) {
-      left: 34px;
       top: 69px;
+      left: 34px;
       width: 134px;
       height: 56px;
     }

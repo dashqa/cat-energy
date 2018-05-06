@@ -1,5 +1,6 @@
 .promo {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -11,9 +12,11 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 320px 305px;
+
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/index-background-mobile@2x.jpg");
     }
+
     @media (min-width: $tablet) {
       display: flex;
       flex-direction: column;
@@ -21,13 +24,15 @@
       background-image: none;
     }
   }
+
   &::after {
     @media (min-width: $desktop) {
-      display: block;
       content: "";
       position: absolute;
       top: -40%;
       left: 50%;
+      z-index: -10;
+      display: block;
       width: 720px;
       height: 696px;
       background-color: $bg-green;
@@ -35,7 +40,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      z-index: -10;
+
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
@@ -52,6 +57,7 @@
     margin-left: 117px;
     text-align: start;
   }
+
   @media (min-width: $desktop) {
     margin-top: 107px;
   }
@@ -64,6 +70,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
   @media (min-width: $tablet) {
     width: 415px;
     margin-top: 16px;
@@ -73,10 +80,11 @@
     text-align: left;
     color: $black;
   }
+
   @media (min-width: $desktop) {
-    padding: 0;
-    margin-left: 2px;
     margin-bottom: 42px;
+    margin-left: 2px;
+    padding: 0;
   }
 }
 
@@ -86,15 +94,17 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: $black;
   }
+
   @media (min-width: $desktop) {
-    padding: 0;
     margin-left: 3px;
+    padding: 0;
   }
 }
 
@@ -104,23 +114,24 @@
   bottom: 63px;
   left: 0;
   margin: 0 auto;
+
   @media (min-width: $tablet) {
     position: static;
     margin-top: -81px;
     margin-left: 29px;
   }
+
   @media (min-width: $desktop) {
-    position: absolute;
     @include indent-reset;
-    left: auto;
+    position: absolute;
     right: 260px;
     bottom: 136px;
+    left: auto;
   }
 }
 
 .promo__programm {
-  @media (min-width: $desktop){
-  height: 555px;
+  @media (min-width: $desktop) {
+    height: 555px;
+  }
 }
-}
-

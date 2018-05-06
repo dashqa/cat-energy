@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin :0;
+    margin: 0;
     padding-bottom: 75px;
     font-size: 60px;
     line-height: 60px;
@@ -122,11 +122,12 @@
 
     &::after {
       right: 0;
+    }
+
+    &:first-child::after {
+      right: 20px;
+    }
   }
-  &:first-child::after {
-    right: 20px;
-  }
- }
 }
 
 .advantages__text {

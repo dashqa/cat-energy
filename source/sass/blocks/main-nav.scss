@@ -138,15 +138,13 @@
   }
 
   @media (min-width: $desktop) {
-
     &--index-page {
-    color: $white;
+      color: $white;
     }
   }
 }
 
 .main-nav__logo {
-
   @media (min-width: $tablet) {
     width: 173px;
     height: 58px;
