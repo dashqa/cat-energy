@@ -25,7 +25,7 @@
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli -x 'source/js/picturefill.js'",
+    "editorconfig": "editorconfig-cli -x 'source/js/picturefill.js, build/js/picturefill.js'",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
