@@ -17,32 +17,6 @@ var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
 
-/*
-gulp.task("style", function() {
-  gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(wait(300))
-    .pipe(sass({includePaths: ['source/sass/blocks']}))
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest("source/css"))
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
-    .pipe(server.stream());
-});
-
-gulp.task("serve", ["style"], function() {
-  server.init({
-    server: "source/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
-  */
-
 gulp.task("serve", ["style"], function() {
   server.init({
     server: "build/",

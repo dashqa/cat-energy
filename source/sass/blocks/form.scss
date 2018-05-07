@@ -390,16 +390,15 @@
     cursor: pointer;
 
     &:hover,
-      &:focus {
-
-        &::before {
-          border: 1px solid #bababa;
-        }
+    &:focus {
+      &::before {
+        border: 1px solid #bababa;
       }
+    }
 
-      &:active {
-        opacity: 0.3;
-      }
+    &:active {
+      opacity: 0.3;
+    }
 
     &::before {
       content: "";
@@ -449,15 +448,15 @@
     cursor: pointer;
 
     &:hover,
-      &:focus {
-        &::before {
-          border: 1px solid #bababa;
-        }
+    &:focus {
+      &::before {
+        border: 1px solid #bababa;
       }
+    }
 
-      &:active {
-        opacity: 0.3;
-      }
+    &:active {
+      opacity: 0.3;
+    }
 
     &::before {
       content: "";
@@ -757,7 +756,6 @@
     @media (min-width: $desktop) {
       right: 0;
       left: 570px;
-
     }
   }
 }
