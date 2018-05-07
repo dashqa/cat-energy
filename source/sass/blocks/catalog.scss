@@ -76,6 +76,17 @@
   color: $black;
   text-transform: uppercase;
 
+  &:hover,
+  &:focus {
+    &::before {
+      left: 140px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     position: absolute;

@@ -58,6 +58,17 @@
 
 .page-footer__social-icon {
 
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
 
     &--vk {
@@ -93,6 +104,10 @@
   font-family: $arial;
   color: $grey;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     padding: 0;
     padding-top: 9px;
@@ -105,6 +120,15 @@
   display: block;
   margin: 0 auto;
   padding: 39px 0 32px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet) {
     padding: 0;
@@ -119,6 +143,16 @@
 
 .page-footer__icon {
   margin-right: -7px;
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     margin-right: -6px;

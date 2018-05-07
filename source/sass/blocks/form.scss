@@ -241,7 +241,20 @@
   color: $grey;
   text-transform: uppercase;
   word-wrap: break-word;
-  border: 1px solid $bg-grey;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover,
+  &:focus {
+    border: 1px solid $border-light;
+  }
+
+  &:active {
+    border: 2px solid $grey;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 
   &--text-field {
     flex-grow: 1;
@@ -345,6 +358,14 @@
   }
 }
 
+.form__input:active ~ .form__icon {
+  fill: $green;
+}
+
+.form__input:invalid ~ .form__icon {
+  fill: #ff8282;
+}
+
 .form__label {
   max-width: 115px;
   font-weight: 400;
@@ -368,6 +389,18 @@
     padding-left: 45px;
     cursor: pointer;
 
+    &:hover,
+      &:focus {
+
+        &::before {
+          border: 1px solid #bababa;
+        }
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+
     &::before {
       content: "";
       position: absolute;
@@ -376,7 +409,7 @@
       width: 28px;
       height: 28px;
       margin-bottom: 12px;
-      border: 1px solid #e6e6e6;
+      border: 1px solid $border-light;
       border-radius: 50%;
       cursor: pointer;
 
@@ -414,6 +447,17 @@
     padding-top: 6px;
     padding-left: 45px;
     cursor: pointer;
+
+    &:hover,
+      &:focus {
+        &::before {
+          border: 1px solid #bababa;
+        }
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
 
     &::before {
       content: "";

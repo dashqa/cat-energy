@@ -12,11 +12,32 @@
   &--grey {
     color: $grey;
     background-color: $bg-grey;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      background-color: #ebebeb;
+    }
   }
 
   &--green {
     color: white;
     background-color: $green;
+
+    &:hover,
+    &:focus {
+      background-color:#5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5eaa2f;
+    }
+
   }
 
   &--promo {
