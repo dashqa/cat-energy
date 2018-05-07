@@ -709,5 +709,11 @@
     @media (min-width: $tablet) {
       right: 86px;
     }
+
+    @media (min-width: $desktop) {
+      right: 0;
+      left: 570px;
+
+    }
   }
 }

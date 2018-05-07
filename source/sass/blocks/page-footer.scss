@@ -3,10 +3,15 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding-top: 64px;
-    padding-bottom: 35px;
+    padding-top: 56px;
+    padding-bottom: 57px;
+  }
+}
+
+.page-footer__logo {
+  @media (min-width: $tablet) {
+    padding-top: 8px;
   }
 }
 
@@ -23,14 +28,15 @@
   @include list-reset;
   position: relative;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
 
   @media (min-width: $tablet) {
-    padding: 0;
+    @include indent-reset;
+    width: 324px;
+    padding-top: 4px;
   }
 }
 
@@ -40,14 +46,39 @@
   padding-top: 3px;
   padding-right: 39px;
   padding-left: 20px;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    height: auto;
+    padding: 0;
+    padding-right: 5px;
+    padding-left: 24px;
+  }
 }
 
-.page-footer__sn {
-  max-width: inherit;
+.page-footer__social-icon {
+
+  @media (min-width: $tablet) {
+
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }
 
 .page-footer__copyright {
-  padding-top: 15px;
+  padding: 15px 0;
 
   @media (min-width: $tablet) {
     padding: 0;
@@ -61,6 +92,13 @@
   line-height: 16px;
   font-family: $arial;
   color: $grey;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-top: 9px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+  }
 }
 
 .page-footer__text-icon {
@@ -77,4 +115,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.page-footer__icon {
+  margin-right: -7px;
+
+  @media (min-width: $tablet) {
+    margin-right: -6px;
+    margin-top: -9px;
+  }
 }

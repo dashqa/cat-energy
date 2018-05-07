@@ -1,6 +1,15 @@
 .promo {
   position: relative;
 
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1300px
+  }
+
   &::before {
     content: "";
     position: absolute;

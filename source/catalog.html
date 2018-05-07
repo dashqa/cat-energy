@@ -45,7 +45,7 @@
       </nav>
     </div>
   </header>
-  <main class="page-main">
+  <main class="page-main wrapper">
     <section class="product" id="product">
       <h1 class="page-main__title page-main__title--catalog-page">Каталог продукции</h1>
       <div class="container">
@@ -54,10 +54,10 @@
           <li class="product__item">
             <a href="products/energypro-500-chicken.html" class="product__link">
               <picture class="product__image">
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/catalog-chicken-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
-                <source media="(min-width: 1300px)" srcset="img/catalog-chicken-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
                 <img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy Pro 500г">
               </picture>
@@ -358,7 +358,7 @@
         </div>
       </div>
       <div class="coordinates__map" aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <iframe src="https://snazzymaps.com/embed/68199" width="100%" height="422px" style="border:none;">
+        <iframe class="coordinates__iframe" src="https://snazzymaps.com/embed/68199">
         </iframe>
       </div>
     </section>
@@ -370,33 +370,24 @@
       <div class="page-footer__social">
         <ul class="page-footer__list">
           <li class="page-footer__item">
-            <a href="https://vk.com/htmlacademy" target="_blank" class="page-footer__link">
-              <svg class="page-footer__vk page-footer__vk--small" width="22" height="12">
-                <use xlink:href="#icon-vk-mobile"></use>
-              </svg>
-              <svg class="page-footer__vk page-footer__vk--big" width="30" height="16">
+            <a href="https://vk.com/htmlacademy" target="_blank" class="page-footer__social-link">
+              <svg class="page-footer__social-icon page-footer__social-icon--vk" width="22" height="12">
                 <use xlink:href="#icon-vk"></use>
               </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="page-footer__item">
-            <a href="https://www.instagram.com/htmlacademy" target="_blank" class="page-footer__link">
-              <svg class="page-footer__inst page-footer__inst--small" width="16" height="16">
-                <use xlink:href="#icon-insta-mobile"></use>
-              </svg>
-              <svg class="page-footer__inst page-footer__inst--big" width="23" height="23">
+            <a href="https://www.instagram.com/htmlacademy" target="_blank" class="page-footer__social-link">
+              <svg class="page-footer__social-icon page-footer__social-icon--insta" width="16" height="16">
                 <use xlink:href="#icon-insta"></use>
               </svg>
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="page-footer__item">
-            <a href="https://www.facebook.com/htmlacademy" target="_blank" class="page-footer__link">
-              <svg class="page-footer__fb page-footer__fb--small" width="10" height="19">
-                <use xlink:href="#icon-fb-mobile"></use>
-              </svg>
-              <svg class="page-footer__fb page-footer__fb--big" width="14" height="28">
+            <a href="https://www.facebook.com/htmlacademy" target="_blank" class="page-footer__social-link">
+              <svg class="page-footer__social-icon page-footer__social-icon--fb" width="10" height="19">
                 <use xlink:href="#icon-fb"></use>
               </svg>
               <span class="visually-hidden">Фейсбук</span>
@@ -407,7 +398,7 @@
       <div class="page-footer__copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
           <span class="page-footer__copy-text">HTML Academy</span>
-          <svg class="page-footer__icon" width="34" height="34">
+          <svg class="page-footer__icon" width="40" height="45">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>

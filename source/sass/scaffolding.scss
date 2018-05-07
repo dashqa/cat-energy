@@ -51,6 +51,13 @@ a {
   }
 }
 
+.wrapper {
+  @media (min-width: $desktop) {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

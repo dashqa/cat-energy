@@ -57,7 +57,7 @@
   @media (min-width: $desktop) {
     max-width: 242px;
     margin-right: 4px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     padding-bottom: 41px;
   }
 
@@ -130,6 +130,7 @@
   }
 
   @media (min-width: $desktop) {
+    width: 170px;
     margin-bottom: 7px;
   }
 }
