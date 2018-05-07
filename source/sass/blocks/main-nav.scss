@@ -5,6 +5,7 @@
   line-height: 20px;
   text-transform: uppercase;
 
+  // классы для открытия и закрытия меню
   &--closed,
   &--opened {
     .main-nav__toggle-bar {
@@ -60,7 +61,7 @@
       display: none;
     }
   }
-
+//класс для скрытия гамбургера и статичного меню для тех, у кого отключен JS
   &--nojs {
     .main-nav__toggle {
       @include hidden;

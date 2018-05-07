@@ -508,6 +508,15 @@
   transform: scale(1);
 }
 
+.form__input--radio-field:focus ~ .form__label--radio-field::before,
+.form__input--checkbox-field:focus ~ .form__label--checkbox-field::before {
+  border: 1px solid $grey;
+}
+
+.form__input:disabled ~ .form__label {
+  opacity: 0.3;
+}
+
 .form__group {
   @media (min-width: $desktop) {
     display: flex;
