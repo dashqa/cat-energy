@@ -146,6 +146,8 @@
 
 .main-nav__logo {
   flex-shrink: 0;
+  width: 191px;
+  height: 38px;
 
   @media (min-width: $tablet) {
     width: 173px;
@@ -154,7 +156,8 @@
 
   @media (min-width: $desktop) {
     width: 202px;
-    height: 59px;
+    height: 60px;
+    margin-left: -2px;
   }
 }
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Кэт энерджи: Подбор программы </title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-nav___icon" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип Кэт энерджи">
+            <img class="main-nav___icon" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button">
@@ -99,7 +99,7 @@
                 <label for="user-email" class="form__label form__label--text-field form__label--user">E-mail:*</label>
                 <input type="email" id="user-email" name="user-name" class="form__input form__input--text-field form__input--user form__input--email"
                   placeholder="kuklachev@gmail.com">
-                <svg class="form__email-icon" width="17" height="13">
+                <svg class="form__icon form__icon--email" width="17" height="13">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
               </li>
@@ -107,7 +107,7 @@
                 <label for="user-tel" class="form__label form__label--text-field form__label--user">Телефон:*</label>
                 <input type="tel" id="user-tel" name="user-tel" class="form__input form__input--text-field form__input--user form__input--tel"
                   placeholder="8 (960) 900-60-90">
-                <svg class="form__tel-icon" width="20" height="20">
+                <svg class="form__icon form__icon--tel" width="20" height="20">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </li>
@@ -211,8 +211,8 @@
     <div class="page-footer__copyright">
       <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
         <span class="page-footer__copy-text">HTML Academy</span>
-        <svg class="page-footer__icon" width="27" height="34">
-          <use xlink:href="#htmlacademy"></use>
+        <svg class="page-footer__icon" width="34" height="34">
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </div>
