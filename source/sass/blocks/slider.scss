@@ -1,17 +1,167 @@
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 48px;
+    background-image: linear-gradient(to top, #f2f2f2 73%, #ffffff 27%);
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    background-image: none;
+  }
+}
+
 .slider__toggle {
   padding: 0;
+  padding-left: 3px;
   line-height: 20px;
   text-transform: uppercase;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
+    padding-bottom: 5px;
     font-size: 20px;
     color: $black;
+    border-bottom: 1px dotted #dcdcdc;
+  }
+}
+
+.slider__image {
+  @media (min-width: $desktop) {
+    content: "";
+    position: absolute;
+    top: -31px;
+    left: -34px;
+  }
+}
+
+.slider__bar {
+  display: flex;
+  width: 84px;
+  height: 14px;
+  margin: auto;
+  padding: 0 4px;
+  background-color: $white;
+  border: 1px solid $border;
+  border-radius: 6px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    margin-top: 9px;
+    background-color: #dcdcdc;
+    border: 0;
+    border-radius: 3px;
   }
 }
 
 .slider__controls {
   display: flex;
   justify-content: space-between;
+  width: 201px;
+  margin: 0 auto;
+  margin-top: 29px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    width: 571px;
+    margin-top: 19px;
+    margin-left: -5px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 574px;
+    margin-top: 477px;
+    margin-left: 0;
+  }
+}
+
+.slider__box:nth-child(2) {
+  display: none;
+}
+
+.slider__label {
+  width: 35px;
+  height: 6px;
+  margin: 0 auto;
+  margin-top: 3px;
+  background-color: $green;
+  border-radius: 3px;
+
+  &--1 {
+    @media (min-width: $tablet) {
+      position: relative;
+      top: -18px;
+      left: 5px;
+      width: 34px;
+      height: 34px;
+      background-color: $white;
+      border: 1px solid #dcdcdc;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+
+      &::before {
+        @media (min-width: $tablet) {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: block;
+          width: 8px;
+          height: 8px;
+          margin: auto;
+          background-color: $green;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &--2 {
+    background-color: transparent; //переключатель для второго слайда в мабильной версии
+
+    @media (min-width: $tablet) {
+      position: relative;
+      top: -18px;
+      left: 5px;
+      display: none; //переключатель для второго слайда в таблет версии
+      width: 34px;
+      height: 34px;
+      background-color: $white;
+      border: 1px solid #dcdcdc;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+
+    &::before {
+      @media (min-width: $tablet) {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 8px;
+        height: 8px;
+        margin: auto;
+        background-color: $green;
+        border-radius: 50%;
+      }
+    }
+  }
 }

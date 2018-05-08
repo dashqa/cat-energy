@@ -4,6 +4,7 @@
 
 .coordinates__title {
   @include indent-reset;
+  width: 283px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -11,25 +12,116 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    width: 235px;
     font-size: 20px;
     line-height: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 25px;
   }
 }
 
 .coordinates__info {
   @include indent-reset;
+  width: 283px;
   font-size: 14px;
   line-height: 20px;
   font-family: $arial;
 
   @media (min-width: $tablet) {
+    width: 195px;
     font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    width: 185px;
+    margin-top: -3px;
+    padding-right: 25px;
+    text-align: start;
   }
 }
 
 .coordinates__contact {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 25px;
+
+  &--bg {
+    background-color: $bg-grey;
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 65px;
+    padding-right: 40px;
+    padding-bottom: 62px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    justify-content: space-around;
+    width: 570px;
+    min-width: auto;
+    min-height: 200px;
+    margin-top: 94px;
+    padding-top: 66px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color: #ffffff;
+  }
+
+  &--index-page {
+    @media (min-width: $desktop) {
+      margin-top: 116px;
+    }
+  }
+}
+
+.coordinates__map {
+  height: 363px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fdf7f0;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet) {
+    height: 396px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    height: 400px;
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
+  }
+
+  &--index-page {
+    @media (min-width: $desktop) {
+      height: 422px;
+    }
+  }
+}
+
+.coordinates__span {
+  @media (min-width: $tablet) {
+    display: block;
+    margin-top: 20px;
+  }
 }

@@ -7,24 +7,81 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+  word-wrap: break-word;
+
+  &::after {
+    content: "";
+    width: 324px;
+  }
 
   @media (min-width: $tablet) {
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.product__image {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 263px;
+  }
+}
+
+.product__link {
+  width: 140px;
+
+  @media (min-width: $tablet) {
+    width: auto;
   }
 }
 
 .product__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  padding-bottom: 24px;
-  border-bottom: 1px solid $border;
+  width: 100%;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 324px;
+    padding-bottom: 45px;
+    text-align: center;
+    background-image: linear-gradient(to top, #f2f2f2 76%, #ffffff 24%);
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 242px;
+    margin-right: 4px;
+    margin-bottom: 7px;
+    padding-bottom: 41px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: $border;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
 }
 
 .product__subtitle {
   display: block;
   width: 77px;
-  margin-bottom: 13px;
+  margin-top: 21px;
+  margin-bottom: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -32,7 +89,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    min-width: 135px;
+    margin: 0 auto;
+    margin-top: 37px;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 36px;
   }
 }
 
@@ -46,12 +110,38 @@
   color: $grey;
 
   @media (min-width: $tablet) {
+    width: 250px;
+    margin: 26px auto 0;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 170px;
+  }
+}
+
+.product__row {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $border-light;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 7px;
   }
 }
 
 .product__cell {
+  @include indent-reset;
+
   &:not(:nth-last-of-type(2n)) {
     text-align: end;
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 140px;
   }
 }

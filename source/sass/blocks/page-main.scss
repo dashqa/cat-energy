@@ -4,25 +4,51 @@
   font-size: 36px;
   line-height: 60px;
   color: $black;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 60px;
+  }
 
   &--catalog-page,
   &--form-page {
     padding: 20px;
-    padding-top: 15px;
+    padding-top: 14px;
 
     @media (min-width: $tablet) {
-      font-size: 60px;
+      padding: 30px;
+      padding-top: 42px;
+
+      @media (min-width: $desktop) {
+        padding: 37px;
+        padding-top: 73px;
+      }
     }
   }
 
   &--catalog-page {
-    padding-bottom: 26px;
+    padding-bottom: 29px;
     border-top: 1px solid $border;
     border-bottom: 1px solid $border;
+
+    @media (min-width: $desktop) {
+      border: none;
+    }
   }
 
   &--form-page {
-    padding-bottom: 23px;
+    padding-bottom: 25px;
     border-top: 1px solid $border;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 54px;
+    }
+
+    @media (min-width: $desktop) {
+      border: none;
+      padding-bottom: 56px;
+    }
   }
 }

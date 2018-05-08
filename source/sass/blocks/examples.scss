@@ -1,10 +1,17 @@
 .examples {
   background-color: $bg-grey;
 
+  @media (min-width: $tablet) {
+    background-color: $white;
+    border-top: 1px solid $border;
+  }
+
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-image: linear-gradient(to bottom, #ffffff 136px, #f2f2f2 136px);
+    border: none;
   }
 }
 
@@ -12,73 +19,117 @@
   @include indent-reset;
   display: block;
   margin-top: 20px;
-  padding: 20px 0;
+  padding-top: 18px;
+  padding-bottom: 22px;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: $black;
 
   @media (min-width: $tablet) {
+    margin: 0;
+    padding-top: 44px;
+    padding-bottom: 64px;
     font-size: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    padding-bottom: 147px;
+  }
+}
+
+.examples__info {
+  @media (min-width: $desktop) {
+    margin-right: 168px;
   }
 }
 
 .examples__description {
   @include indent-reset;
   padding-right: 10px;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
   font-size: 14px;
   font-family: $arial;
   color: $grey;
+  word-wrap: break-word;
 
   @media (min-width: $tablet) {
+    padding-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 438px;
+    padding: 0;
+    padding-bottom: 68px;
   }
 }
 
 .examples__list {
+  @include list-reset;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding-right: 22px;
-  padding-left: 42px;
-  list-style: none;
-}
+  margin-bottom: 35px;
+  text-align: center;
 
-.examples__info {
   @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 365px;
+    margin: 0;
   }
 }
 
 .examples__item {
-  &:first-child {
-    margin-right: 55px;
-  }
+  position: relative;
+  text-align: center;
 
   &--cost {
     display: flex;
     justify-content: space-between;
-    padding-top: 21px;
-    padding-left: 5px;
+    padding-top: 20px;
+    padding-left: 45px;
+
+    @media (min-width: $tablet) {
+      margin-left: 107px;
+      padding: 0;
+      padding-top: 12px;
+      text-align: right;
+    }
+
+    @media (min-width: $desktop) {
+      @include indent-reset;
+      width: 326px;
+      padding-top: 61px;
+      text-align: start;
+    }
   }
 }
 
 .examples__subtitle {
   @include indent-reset;
+  width: 124px;
+  padding: 15px 0;
   font-size: 24px;
   line-height: 24px;
   color: $black;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 
   &--cost {
-    padding-right: 3px;
+    display: inline;
+    padding: 0;
+    padding-top: 15px;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
+    border: none;
 
     @media (min-width: $tablet) {
       font-size: 20px;
@@ -86,37 +137,77 @@
   }
 
   @media (min-width: $tablet) {
+    width: 162px;
+    height: 72px;
+    margin: 0;
+    padding-top: 22px;
     font-size: 30px;
+
+    &--cost {
+      @include indent-reset;
+      width: 192px;
+      font-size: 20px;
+    }
   }
 }
 
 .examples__text {
   @include indent-reset;
+  position: absolute;
+  top: 47px;
+  right: 25px;
   display: block;
-  width: 10px;
-  padding-top: 5px;
+  width: 75px;
+  padding: 0 10px;
   font-size: 12px;
   line-height: 12px;
   font-family: $arial;
   text-align: center;
+  background-color: $bg-grey;
+
+  @media (min-width: $tablet) {
+    top: 64px;
+    right: 18px;
+    width: 128px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $bg-grey;
+  }
 
   &--cost {
-    display: block;
+    position: static;
     width: auto;
-    padding-top: 0;
+    padding-top: 15px;
+    padding-left: 3px;
     font-size: 14px;
     line-height: 20px;
     font-family: $oswald;
     color: $black;
     text-transform: uppercase;
+    background-color: transparent;
 
     @media (min-width: $tablet) {
+      @include indent-reset;
+      position: absolute;
+      top: 41px;
+      right: 0;
       font-size: 20px;
+      text-align: right;
+    }
+
+    @media (min-width: $desktop) {
+      position: static;
     }
   }
+}
 
-  @media (min-width: $tablet) {
-    font-size: 14px;
-    line-height: 14px;
+.examples__wrapper {
+  @media (min-width: $desktop) {
+    padding-right: 0;
   }
 }

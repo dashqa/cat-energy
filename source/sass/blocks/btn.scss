@@ -27,18 +27,78 @@
     line-height: 18px;
 
     @media (min-width: $tablet) {
+      margin: 0;
+      margin-top: 48px;
+      padding: 15px 29px 17px 26px;
       font-size: 20px;
       line-height: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 52px;
+      margin-left: 2px;
     }
   }
 
   &--product {
     width: 100%;
+
+    @media (min-width: $tablet) {
+      width: auto;
+      margin-top: 29px;
+      margin-right: 17px;
+      margin-left: 21px;
+      padding: 9px 94px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0;
+      margin-top: 27px;
+      padding: 9px 54px;
+    }
+  }
+
+  &--show-more {
+    @media (min-width: $tablet) {
+      padding: 9.5px 80px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 9.5px 39px;
+    }
+  }
+
+  &--addit {
+    @media (min-width: $tablet) {
+      @include indent-reset;
+      width: 100%;
+      margin-top: 23px;
+      padding: 10px;
+    }
+
+    @media (min-width: $desktop) {
+      @include indent-reset;
+      width: auto;
+      padding: 10px 93px;
+    }
   }
 
   &--form {
     width: 100%;
     margin-bottom: 23px;
     border: 0;
+
+    @media (min-width: $tablet) {
+      width: auto;
+      margin: 0;
+      margin-left: 39px;
+      padding: 16px 65px;
+      font-size: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 0;
+      padding: 16px 207px;
+    }
   }
 }

@@ -1,3 +1,9 @@
-.page-header__icon {
-  width: 192px; //временно, чтоб тревис не жаловался на пустой файл
+.page-header {
+  padding-top: 17px;
+  padding-bottom: 14px;
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin-top: 55px;
+  }
 }
