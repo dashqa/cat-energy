@@ -1,6 +1,8 @@
 .page-footer {
   background-color: $bg-grey;
+}
 
+.page-footer__wrapper {
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
