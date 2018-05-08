@@ -5,15 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Кэт энерджи: Каталог продукции </title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div style="display: none;">
-        <include src="build/img/sprite.svg"></include>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page-header">
+  <header class="page-header wrapper">
     <div class="container">
       <nav class="main-nav main-nav--closed">
         <a href="index.html" class="main-nav__logo">
@@ -45,8 +47,8 @@
       </nav>
     </div>
   </header>
-  <main class="page-main wrapper">
-    <section class="product" id="product">
+  <main class="page-main">
+    <section class="product wrapper" id="product">
       <h1 class="page-main__title page-main__title--catalog-page">Каталог продукции</h1>
       <div class="container">
         <h2 class="product__title visually-hidden">Список кормов</h2>
@@ -285,7 +287,7 @@
         </ul>
       </div>
     </section>
-    <section class="additional">
+    <section class="additional wrapper">
       <div class="container">
         <h2 class="additional__title">Дополнительные товары</h2>
         <div class="additional__wrapper">
@@ -348,7 +350,7 @@
       </div>
     </section>
     <section class="coordinates coordinates--inner-page">
-      <div class="container">
+      <div class="container wrapper">
         <div class="coordinates__contact">
           <h2 class="coordinates__title">Приглашаем
             <br>к сотрудничеству дилеров!</h2>
@@ -364,7 +366,7 @@
     </section>
   </main>
   <footer class="page-footer container">
-      <div class="page-footer__wrapper wrapper">
+    <div class="page-footer__wrapper wrapper">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
         <img class="page-footer__text-icon" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
@@ -405,7 +407,7 @@
         </a>
       </div>
     </div>
-    </footer>
+  </footer>
   <script src="js/picturefill.js"></script>
   <script src="js/svgxuse.js" defer></script>
   <script src="js/script.js"></script>

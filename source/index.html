@@ -5,15 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div style="display: none;">
-        <include src="build/img/sprite.svg"></include>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page-header">
+  <header class="page-header wrapper">
     <div class="container">
       <nav class="main-nav main-nav--closed">
         <a class="main-nav__logo">
@@ -45,9 +47,9 @@
       </nav>
     </div>
   </header>
-  <main class="page-main wrapper">
+  <main class="page-main">
     <h1 class="visually-hidden">Правильное питание для вашего питомца</h1>
-    <section class="promo">
+    <section class="promo wrapper">
       <div class="promo__programm">
         <div class="promo__wrapper">
           <h2 class="promo__title visually-hidden">Подбор программы питания</h2>
@@ -65,7 +67,7 @@
         </picture>
       </div>
     </section>
-    <section class="catalog">
+    <section class="catalog wrapper">
       <div class="container">
         <h2 class="catalog__title visually-hidden">Категории продукции</h2>
         <ul class="catalog__list">
@@ -85,7 +87,7 @@
         </ul>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages wrapper">
       <div class="container">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
@@ -161,7 +163,7 @@
       </div>
     </section>
     <section class="coordinates">
-      <div class="container">
+      <div class="container wrapper">
         <div class="coordinates__contact coordinates__contact--index-page">
           <h2 class="coordinates__title">Приглашаем
             <br>к сотрудничеству дилеров!</h2>
@@ -178,46 +180,46 @@
   </main>
   <footer class="page-footer container">
     <div class="page-footer__wrapper wrapper">
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
-      <img class="page-footer__text-icon" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
-    </a>
-    <div class="page-footer__social">
-      <ul class="page-footer__list">
-        <li class="page-footer__item">
-          <a href="https://vk.com/htmlacademy" target="_blank" class="page-footer__social-link">
-            <svg class="page-footer__social-icon page-footer__social-icon--vk" width="22" height="12">
-              <use xlink:href="#icon-vk"></use>
-            </svg>
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="page-footer__item">
-          <a href="https://www.instagram.com/htmlacademy" target="_blank" class="page-footer__social-link">
-            <svg class="page-footer__social-icon page-footer__social-icon--insta" width="16" height="16">
-              <use xlink:href="#icon-insta"></use>
-            </svg>
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
-        <li class="page-footer__item">
-          <a href="https://www.facebook.com/htmlacademy" target="_blank" class="page-footer__social-link">
-            <svg class="page-footer__social-icon page-footer__social-icon--fb" width="10" height="19">
-              <use xlink:href="#icon-fb"></use>
-            </svg>
-            <span class="visually-hidden">Фейсбук</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
-        <span class="page-footer__copy-text">HTML Academy</span>
-        <svg class="page-footer__icon" width="40" height="45">
-          <use xlink:href="#icon-htmlacademy"></use>
-        </svg>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
+        <img class="page-footer__text-icon" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
+      <div class="page-footer__social">
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a href="https://vk.com/htmlacademy" target="_blank" class="page-footer__social-link">
+              <svg class="page-footer__social-icon page-footer__social-icon--vk" width="22" height="12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="https://www.instagram.com/htmlacademy" target="_blank" class="page-footer__social-link">
+              <svg class="page-footer__social-icon page-footer__social-icon--insta" width="16" height="16">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="https://www.facebook.com/htmlacademy" target="_blank" class="page-footer__social-link">
+              <svg class="page-footer__social-icon page-footer__social-icon--fb" width="10" height="19">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
+          <span class="page-footer__copy-text">HTML Academy</span>
+          <svg class="page-footer__icon" width="40" height="45">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
-  </div>
   </footer>
   <script src="js/picturefill.js"></script>
   <script src="js/svgxuse.js" defer></script>

@@ -69,8 +69,8 @@
 
 .catalog__link {
   position: relative;
+  padding: 0 20px;
   padding-bottom: 22px;
-  padding-left: 20px;
   font-size: 16px;
   line-height: 16px;
   color: $black;
@@ -78,7 +78,7 @@
 
   &:hover,
   &:focus {
-    &::before {
+    &::after {
       left: 140px;
     }
   }
@@ -87,7 +87,7 @@
     opacity: 0.3;
   }
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: 4px;

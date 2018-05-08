@@ -53,8 +53,8 @@
 
   &--radio-field {
     position: relative;
-    padding-top: 27px;
-    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 27px;
 
     @media (min-width: $tablet) {
       flex-direction: column;
@@ -258,7 +258,7 @@
 
   &--text-field {
     flex-grow: 1;
-    height: 43px;
+    height: 44px;
 
     @media (min-width: $tablet) {
       height: 51px;
@@ -302,8 +302,8 @@
   }
 
   &--age {
-    margin-left: 6px;
-    padding-left: 15px;
+    margin-left: 9px;
+    padding-left: 12px;
 
     @media (min-width: $tablet) {
       margin-left: 17px;
@@ -590,7 +590,7 @@
 
   &--user {
     width: 200px;
-    margin-bottom: 34px;
+    margin-bottom: 31px;
 
     @media (min-width: $tablet) {
       width: 556px;
@@ -611,7 +611,7 @@
 
   &--comment {
     width: 142px;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 
     @media (min-width: $tablet) {
       width: 218px;
@@ -631,7 +631,7 @@
 
   &--extra {
     width: 164px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
     padding-top: 27px;
 
     @media (min-width: $tablet) {
