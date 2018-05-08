@@ -41,11 +41,16 @@
 }
 
 .slider__image {
+  @media (min-width: $tablet) {
+    margin-left: 16px;
+  }
+
   @media (min-width: $desktop) {
     content: "";
     position: absolute;
     top: -31px;
     left: -34px;
+    margin: 0;
   }
 }
 
@@ -86,7 +91,7 @@
 
   @media (min-width: $desktop) {
     width: 574px;
-    margin-top: 477px;
+    margin-top: 503px;
     margin-left: 0;
   }
 }

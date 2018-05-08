@@ -211,12 +211,16 @@
     text-align: right;
   }
 
+  @media (min-width: $desktop) {
+    max-width: 250px;
+  }
+
   &--big {
     @media (min-width: $tablet) {
       width: 135px;
 
       @media (min-width: $desktop) {
-        width: 245px;
+        width: 243px;
         text-align: left;
       }
     }

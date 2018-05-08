@@ -38,7 +38,7 @@
     @media (min-width: $desktop) {
       content: "";
       position: absolute;
-      top: -40%;
+      top: -23%;
       left: 50%;
       z-index: -10;
       display: block;
@@ -69,7 +69,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 107px;
+    margin-top: 92px;
   }
 }
 
@@ -134,15 +134,13 @@
 
   @media (min-width: $desktop) {
     @include indent-reset;
-    position: absolute;
-    right: 260px;
-    bottom: 136px;
-    left: auto;
+    transform: translate(-128px, 28px);
   }
 }
 
 .promo__programm {
   @media (min-width: $desktop) {
-    height: 555px;
+    display: flex;
+    margin-bottom: 161px;
   }
 }

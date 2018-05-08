@@ -682,7 +682,7 @@
 
       @media (min-width: $desktop) {
         top: 90px;
-        right: 117%;
+        right: calc(100% - -40px);
       }
     }
   }

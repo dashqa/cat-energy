@@ -60,12 +60,12 @@
                 <li class="form__item form__item--text-field form__item--cat">
                   <label for="cat-name" class="form__label form__label--text-field form__label--cat">Имя:*</label>
                   <input type="text" id="cat-name" name="cat-name" class="form__input form__input--text-field form__input--cat form__input--name"
-                    placeholder="Барсик" pattern="^[a-zA-Z]+$">
+                    placeholder="Барсик" pattern="^[a-zA-Z]+$" required>
                 </li>
                 <li class="form__item form__item--text-field form__item--cat">
                   <label for="cat-weight" class="form__label form__label--text-field form__label--cat">Вес (кг):*</label>
                   <input type="text" id="cat-weight" name="cat-weight" class="form__input form__input--text-field form__input--cat form__input--weight"
-                    placeholder="7" pattern="^[ 0-9]+$">
+                    placeholder="7" pattern="^[ 0-9]+$" required>
                 </li>
                 <li class="form__item form__item--text-field form__item--cat">
                   <label for="cat-age" class="form__label form__label--text-field form__label--cat">Возраст (лет):</label>
@@ -100,7 +100,7 @@
               <li class="form__item form__item--text-field form__item--user">
                 <label for="user-email" class="form__label form__label--text-field form__label--user">E-mail:*</label>
                 <input type="email" id="user-email" name="user-name" class="form__input form__input--text-field form__input--user form__input--email"
-                  placeholder="kuklachev@gmail.com">
+                  placeholder="kuklachev@gmail.com" required>
                 <svg class="form__icon form__icon--email" width="17" height="13">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
@@ -108,7 +108,7 @@
               <li class="form__item form__item--text-field form__item--user">
                 <label for="user-tel" class="form__label form__label--text-field form__label--user">Телефон:*</label>
                 <input type="tel" id="user-tel" name="user-tel" class="form__input form__input--text-field form__input--user form__input--tel"
-                  placeholder="8 (960) 900-60-90">
+                  placeholder="8 (960) 900-60-90" pattern="^[ 0-9]+$" required>
                 <svg class="form__icon form__icon--tel" width="20" height="20">
                   <use xlink:href="#icon-phone"></use>
                 </svg>

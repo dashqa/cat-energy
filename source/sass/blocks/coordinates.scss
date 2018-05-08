@@ -72,12 +72,6 @@
     padding-left: 30px;
     background-color: #ffffff;
   }
-
-  &--index-page {
-    @media (min-width: $desktop) {
-      margin-top: 116px;
-    }
-  }
 }
 
 .coordinates__map {
@@ -110,12 +104,6 @@
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");
-    }
-  }
-
-  &--index-page {
-    @media (min-width: $desktop) {
-      height: 422px;
     }
   }
 }
