@@ -14,8 +14,8 @@
 
 .catalog__subtitle {
   display: block;
-  padding: 30px 0;
-  padding-left: 92px;
+  padding-bottom: 30px;
+  padding-left: 72px;
   max-width: 250px;
   word-wrap: break-word;
   font-weight: normal;
@@ -43,17 +43,20 @@
 
 .catalog__text {
   @include indent-reset;
-  padding: 0 20px 40px;
+  padding-bottom: 22px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
   font-size: 14px;
   font-family: $arial;
   color: $grey;
 
   @media (min-width: $tablet) {
+    @include indent-reset;
     padding-right: 280px;
     padding-bottom: 57px;
-    padding-left: 0;
     font-size: 16px;
     line-height: 24px;
+    border: none;
 
     &--pro {
       padding-right: 312px;
@@ -69,8 +72,8 @@
 
 .catalog__link {
   position: relative;
-  padding: 0 20px;
-  padding-bottom: 22px;
+  width: 165px;
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 16px;
   color: $black;
@@ -91,7 +94,7 @@
     content: "";
     position: absolute;
     top: 4px;
-    left: 116px;
+    left: 97px;
     width: 24px;
     height: 11px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
@@ -102,22 +105,22 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 0;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 0;
   }
 }
 
 .catalog__item {
   position: relative;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 6px;
+  padding-right: 19px;
   background-color: $bg-grey;
 
   @media (min-width: $tablet) {
-    padding-bottom: 62px;
+    @include indent-reset;
+    padding-bottom: 47px;
     padding-left: 53px;
   }
 
