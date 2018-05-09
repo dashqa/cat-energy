@@ -92,13 +92,15 @@
   text-align: center;
 
   &--cost {
-    padding-top: 3px;
+    flex-direction: row;
+    padding-top: 18px;
     padding-left: 45px;
 
     @media (min-width: $tablet) {
-      margin-left: 107px;
+      flex-direction: column;
       padding: 0;
       padding-top: 12px;
+      margin-left: 107px;
       margin-bottom: 16px;
       text-align: right;
     }
@@ -144,7 +146,12 @@
       @include indent-reset;
       flex-direction: column;
       width: 192px;
+      margin-bottom: 10px;
       font-size: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0;
     }
   }
 }
@@ -164,6 +171,7 @@
 
   @media (min-width: $tablet) {
     width: 128px;
+    max-width: 193px;
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
@@ -176,7 +184,6 @@
   &--cost {
     width: auto;
     margin: auto;
-    padding-top: 15px;
     padding-left: 3px;
     font-size: 14px;
     line-height: 20px;

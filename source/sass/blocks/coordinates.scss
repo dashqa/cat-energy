@@ -10,6 +10,7 @@
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+  overflow: auto;
 
   @media (min-width: $tablet) {
     width: 235px;
@@ -28,6 +29,7 @@
   font-size: 14px;
   line-height: 20px;
   font-family: $arial;
+  overflow: auto;
 
   @media (min-width: $tablet) {
     width: 195px;
@@ -65,10 +67,9 @@
     justify-content: space-around;
     width: 570px;
     min-width: auto;
-    min-height: 200px;
+    max-height: 250px;
     margin-top: 94px;
     padding-top: 66px;
-    padding-bottom: 20px;
     padding-left: 30px;
     background-color: #ffffff;
   }

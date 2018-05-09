@@ -99,8 +99,8 @@ gulp.task("build", function(done) {
     "clean",
     "copy",
     "style",
-    "sprite",
     "images",
+    "sprite",
     "webp",
     "html",
     done

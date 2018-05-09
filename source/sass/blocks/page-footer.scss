@@ -12,6 +12,8 @@
 }
 
 .page-footer__logo {
+  flex-shrink: 0;
+
   @media (min-width: $tablet) {
     padding-top: 8px;
   }

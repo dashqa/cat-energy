@@ -141,9 +141,12 @@
 
   &--radio-field {
     min-width: 280px;
+    width: 280px;
+    margin-bottom: 26px;
     word-wrap: break-word;
 
     @media (min-width: $tablet) {
+      width: auto;
       max-width: 515px;
     }
 
@@ -152,8 +155,6 @@
     }
 
     &:nth-child(1) {
-      margin-bottom: 26px;
-
       @media (min-width: $tablet) {
         margin-bottom: 33px;
       }
@@ -189,11 +190,11 @@
 
   &--checkbox-field {
     min-width: 280px;
+    width: 280px;
     word-wrap: break-word;
+    margin-bottom: 25px;
 
     &:nth-child(1) {
-      margin-bottom: 25px;
-
       @media (min-width: $tablet) {
         margin-bottom: 51px;
       }
@@ -204,8 +205,6 @@
     }
 
     &:nth-child(2) {
-      margin-bottom: 25px;
-
       @media (min-width: $desktop) {
         margin-bottom: 0;
       }
@@ -253,6 +252,10 @@
   }
 
   &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &--error-js {  // класс используется для подсвечивания поля ввода при незаполненном обязательном поле / аналог requared
     border: 2px solid #ff8282;
   }
 
@@ -316,16 +319,26 @@
   }
 
   &--user {
-    position: relative;
+    margin-right: -17px;
+
+    @media (min-width: $tablet) {
+      margin-right: 37px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: 0;
+    }
   }
 
   &--email {
     margin-left: 11px;
     padding-left: 14px;
+    padding-right: 35px;
 
     @media (min-width: $tablet) {
       margin-left: 20px;
       padding-left: 20px;
+      padding-right: 50px;
     }
 
     @media (min-width: $desktop) {
@@ -336,10 +349,12 @@
   &--tel {
     margin-left: 11px;
     padding-left: 14px;
+    padding-right: 35px;
 
     @media (min-width: $tablet) {
       margin-left: 14px;
       padding-left: 19px;
+      padding-right: 50px;
     }
 
     @media (min-width: $desktop) {
@@ -587,6 +602,7 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+  word-wrap: break-word;
 
   &--user {
     width: 200px;
@@ -636,7 +652,9 @@
 
     @media (min-width: $tablet) {
       width: 253px;
-      margin-top: 37px;
+      margin: 0;
+      margin-bottom: 38px;
+      padding-top: 63px;
       padding-left: 39px;
     }
 
@@ -741,30 +759,41 @@
 }
 
 .form__icon {
-  position: absolute;
-
   &--tel {
-    right: 33px;
+    width: 20px;
+    height: 20px;
+    margin-left: -2px;
+    transform: translateX(-12px);
 
     @media (min-width: $tablet) {
-      right: 83px;
+      margin-left: -21px;
+      transform: translateX(-53px);
     }
 
     @media (min-width: $desktop) {
-      right: 61px;
+      margin-left: -18px;
+      transform: translateX(-21px);
     }
   }
 
   &--email {
-    right: 36px;
+    width: 17px;
+    height: 13px;
+    transform: translateX(-15px);
 
     @media (min-width: $tablet) {
-      right: 86px;
+      margin-left: -19px;
+      transform: translateX(-56px);
     }
 
     @media (min-width: $desktop) {
-      right: 0;
-      left: 570px;
+      margin-left: -11px;
+      transform: translateX(-26px);
+
     }
+  }
+
+  &--error-js { // класс используется для подсвечивания иконки при незаполненном обязательном поле / аналог requared
+    fill: #ff8282;
   }
 }

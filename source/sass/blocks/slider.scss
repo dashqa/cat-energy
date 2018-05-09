@@ -41,8 +41,11 @@
 }
 
 .slider__image {
+  width: 320px;
+
   @media (min-width: $tablet) {
     margin-left: 16px;
+    width: 690px;
   }
 
   @media (min-width: $desktop) {
