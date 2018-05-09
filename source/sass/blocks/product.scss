@@ -149,8 +149,8 @@
 
 .product__cell {
   @include indent-reset;
-  word-wrap: break-word;
   max-width: 80px;
+  word-wrap: break-word;
 
   &:not(:nth-last-of-type(2n)) {
     text-align: end;
