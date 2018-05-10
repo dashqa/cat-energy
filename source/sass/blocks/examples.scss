@@ -98,10 +98,10 @@
 
     @media (min-width: $tablet) {
       flex-direction: column;
+      margin-bottom: 16px;
+      margin-left: 107px;
       padding: 0;
       padding-top: 12px;
-      margin-left: 107px;
-      margin-bottom: 16px;
       text-align: right;
     }
 
@@ -123,9 +123,9 @@
   line-height: 24px;
   color: $black;
   text-transform: uppercase;
+  word-wrap: break-word;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
-  word-wrap: break-word;
 
   @media (min-width: $tablet) {
     width: 162px;
@@ -159,15 +159,15 @@
 .examples__text {
   @include indent-reset;
   display: block;
+  width: 75px;
   margin: 0 auto;
   margin-top: -7px;
-  width: 75px;
   font-size: 12px;
   line-height: 12px;
   font-family: $arial;
   text-align: center;
-  background-color: $bg-grey;
   word-wrap: break-word;
+  background-color: $bg-grey;
 
   @media (min-width: $tablet) {
     width: 128px;

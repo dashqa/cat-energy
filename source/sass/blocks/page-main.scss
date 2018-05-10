@@ -1,10 +1,10 @@
 .page-main__title {
   @include indent-reset;
+  overflow: hidden;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: $black;
-  overflow: hidden;
 
   @media (min-width: $tablet) {
     max-width: 100%;
@@ -47,8 +47,8 @@
     }
 
     @media (min-width: $desktop) {
-      border: none;
       padding-bottom: 56px;
+      border: none;
     }
   }
 }
