@@ -149,8 +149,9 @@
 
 .product__cell {
   @include indent-reset;
-  word-wrap: break-word;
+  width: 80px;
   max-width: 80px;
+  word-wrap: break-word;
 
   &:not(:nth-last-of-type(2n)) {
     text-align: end;
@@ -158,6 +159,14 @@
 
   @media (min-width: $tablet) {
     max-width: 140px;
+
+    &:first-child {
+      text-align: left;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
   }
 
   @media (min-width: $desktop) {
