@@ -82,7 +82,11 @@
   &:hover,
   &:focus {
     &::after {
-      left: 140px;
+      left: 110px;
+
+      @media (min-width: $tablet) {
+        left: 140px;
+      }
     }
   }
 
