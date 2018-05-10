@@ -61,13 +61,12 @@
       display: none;
     }
   }
-
   //класс для скрытия гамбургера для тех, у кого отключен JS
   &--nojs {
     .main-nav__toggle {
       @include hidden;
+    }
   }
-}
 
   @media (min-width: $tablet) {
     display: flex;
@@ -116,9 +115,8 @@
 }
 
 .main-nav__list {
-  text-align: center;
-
   @include list-reset;
+  text-align: center;
 
   @media (min-width: $tablet) {
     display: flex;
