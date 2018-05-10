@@ -182,7 +182,7 @@
   }
 }
 
-.additional__row tbody {
+.additional__tbody {
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
@@ -191,6 +191,7 @@
 
 .additional__cell {
   @include indent-reset;
+  max-width: 210px;
   font-size: 14px;
   line-height: 14px;
   font-family: $arial;
@@ -210,12 +211,16 @@
     text-align: right;
   }
 
+  @media (min-width: $desktop) {
+    max-width: 250px;
+  }
+
   &--big {
     @media (min-width: $tablet) {
       width: 135px;
 
       @media (min-width: $desktop) {
-        width: 245px;
+        width: 243px;
         text-align: left;
       }
     }

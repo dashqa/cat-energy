@@ -12,11 +12,31 @@
   &--grey {
     color: $grey;
     background-color: $bg-grey;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      background-color: #ebebeb;
+    }
   }
 
   &--green {
     color: white;
     background-color: $green;
+
+    &:hover,
+    &:focus {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5eaa2f;
+    }
   }
 
   &--promo {
@@ -45,6 +65,7 @@
 
     @media (min-width: $tablet) {
       width: auto;
+      max-width: 256px;
       margin-top: 29px;
       margin-right: 17px;
       margin-left: 21px;
@@ -52,6 +73,7 @@
     }
 
     @media (min-width: $desktop) {
+      max-width: 176px;
       margin: 0;
       margin-top: 27px;
       padding: 9px 54px;
@@ -72,6 +94,7 @@
     @media (min-width: $tablet) {
       @include indent-reset;
       width: 100%;
+      max-width: 635px;
       margin-top: 23px;
       padding: 10px;
     }
@@ -79,6 +102,7 @@
     @media (min-width: $desktop) {
       @include indent-reset;
       width: auto;
+      max-width: 250px;
       padding: 10px 93px;
     }
   }

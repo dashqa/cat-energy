@@ -51,6 +51,19 @@ a {
   }
 }
 
+.wrapper {
+  /*max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    max-width: 768px;
+  }
+*/
+  @media (min-width: $desktop) {
+    max-width: 1300px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
