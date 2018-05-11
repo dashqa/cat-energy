@@ -145,20 +145,19 @@
 
 .page-footer__icon {
   margin-right: -7px;
-
   fill: #666666;
-
-  &:hover,
-  &:focus {
-    fill: $green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 
   @media (min-width: $tablet) {
     margin-top: -9px;
     margin-right: -6px;
   }
+}
+
+.page-footer__link:hover .page-footer__icon,
+.page-footer__link:focus .page-footer__icon {
+  fill: $green;
+}
+
+.page-footer__link:active .page-footer__icon {
+  opacity: 0.3;
 }

@@ -258,11 +258,6 @@
     border: 2px solid #ff8282;
   }
 
-  // класс используется для подсвечивания поля ввода при незаполненном обязательном поле / аналог requared
-  &--error-js {
-    border: 2px solid #ff8282;
-  }
-
   &--text-field {
     flex-grow: 1;
     height: 44px;
@@ -690,7 +685,7 @@
 
     @media (min-width: $desktop) {
       top: 90px;
-      left: auto;
+      left: 100%;
     }
   }
 

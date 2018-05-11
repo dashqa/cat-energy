@@ -82,11 +82,9 @@
   &:hover,
   &:focus {
     &::after {
-      left: 110px;
-
-      @media (min-width: $tablet) {
-        left: 140px;
-      }
+      width: 33px;
+      height: 11px;
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
     }
   }
 
@@ -104,7 +102,8 @@
     background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
 
     @media (min-width: $tablet) {
-      left: 128px;
+      top: 5px;
+      left: 132px;
     }
   }
 
@@ -186,6 +185,7 @@
     width: 50px;
     height: 50px;
     background-image: url("../img/icon-cat-slim.svg");
+    background-size: cover;
 
     @media (min-width: $tablet) {
       top: 80px;
@@ -209,6 +209,7 @@
     width: 70px;
     height: 60px;
     background-image: url("../img/icon-cat-pro.svg");
+    background-size: cover;
 
     @media (min-width: $tablet) {
       top: 135px;
