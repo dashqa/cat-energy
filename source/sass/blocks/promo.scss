@@ -42,16 +42,15 @@
       left: 50%;
       z-index: -10;
       display: block;
-      width: 720px;
+      width: 50%;
       height: 696px;
-      background-color: $bg-green;
-      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient($green, $green);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient($green, $green);
       }
     }
   }
