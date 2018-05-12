@@ -37,6 +37,10 @@
     &:focus {
       border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     }
+
+    &:active {
+      border-color: transparent;
+    }
   }
 }
 
@@ -44,12 +48,11 @@
   width: 320px;
 
   @media (min-width: $tablet) {
-    margin-left: 16px;
     width: 690px;
+    margin-left: 16px;
   }
 
   @media (min-width: $desktop) {
-    content: "";
     position: absolute;
     top: -31px;
     left: -34px;

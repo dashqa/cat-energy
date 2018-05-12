@@ -1,7 +1,3 @@
-.coordinates__bg {
-  background-color: $bg-grey;
-}
-
 .coordinates__title {
   @include indent-reset;
   width: 283px;
@@ -103,10 +99,18 @@
   }
 }
 
+.coordinates__bg {
+  background-color: $bg-grey;
+}
+
 .coordinates__iframe {
   width: 100%;
-  height: 422px;
+  height: 365px;
   border: none;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
 }
 
 .coordinates__span {

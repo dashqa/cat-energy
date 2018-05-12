@@ -61,7 +61,6 @@
 }
 
 .page-footer__social-icon {
-
   fill: #666666;
 
   &:hover,
@@ -114,8 +113,8 @@
   @media (min-width: $tablet) {
     padding: 0;
     padding-top: 9px;
-    padding-bottom: 20px;
     padding-right: 15px;
+    padding-bottom: 20px;
   }
 }
 
@@ -148,17 +147,17 @@
   margin-right: -7px;
   fill: #666666;
 
-  &:hover,
-  &:focus {
-    fill: $green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet) {
-    margin-right: -6px;
     margin-top: -9px;
+    margin-right: -6px;
   }
+}
+
+.page-footer__link:hover .page-footer__icon,
+.page-footer__link:focus .page-footer__icon {
+  fill: $green;
+}
+
+.page-footer__link:active .page-footer__icon {
+  opacity: 0.3;
 }

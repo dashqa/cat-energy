@@ -14,15 +14,15 @@
 
 .catalog__subtitle {
   display: block;
+  max-width: 250px;
   padding-bottom: 30px;
   padding-left: 72px;
-  max-width: 250px;
-  word-wrap: break-word;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   color: $black;
   text-transform: uppercase;
+  word-wrap: break-word;
 
   @media (min-width: $tablet) {
     padding-top: 75px;
@@ -43,12 +43,12 @@
 
 .catalog__text {
   @include indent-reset;
-  padding-bottom: 22px;
   margin-bottom: 19px;
-  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 22px;
   font-size: 14px;
   font-family: $arial;
   color: $grey;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet) {
     @include indent-reset;
@@ -82,11 +82,9 @@
   &:hover,
   &:focus {
     &::after {
-      left: 110px;
-
-      @media (min-width: $tablet) {
-        left: 140px;
-      }
+      width: 33px;
+      height: 11px;
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
     }
   }
 
@@ -104,6 +102,12 @@
     background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
 
     @media (min-width: $tablet) {
+      top: 5px;
+      left: 132px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 2px;
       left: 128px;
     }
   }
@@ -117,9 +121,9 @@
 .catalog__item {
   position: relative;
   padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 6px;
   padding-right: 19px;
+  padding-bottom: 6px;
+  padding-left: 20px;
   background-color: $bg-grey;
 
   @media (min-width: $tablet) {
@@ -186,6 +190,7 @@
     width: 50px;
     height: 50px;
     background-image: url("../img/icon-cat-slim.svg");
+    background-size: 36px, cover;
 
     @media (min-width: $tablet) {
       top: 80px;
@@ -193,6 +198,7 @@
       left: auto;
       width: 140px;
       height: 194px;
+      background-size: cover;
     }
 
     @media (min-width: $desktop) {
@@ -207,8 +213,9 @@
     top: 35px;
     left: 12px;
     width: 70px;
-    height: 60px;
+    height: 31px;
     background-image: url("../img/icon-cat-pro.svg");
+    background-size: 70px, cover;
 
     @media (min-width: $tablet) {
       top: 135px;
@@ -216,6 +223,7 @@
       left: auto;
       width: 268px;
       height: 112px;
+      background-size: cover;
     }
 
     @media (min-width: $desktop) {
