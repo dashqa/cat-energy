@@ -54,14 +54,13 @@
   &--radio-field {
     position: relative;
     padding-top: 25px;
-    padding-bottom: 27px;
 
     @media (min-width: $tablet) {
       flex-direction: column;
       margin-top: 50px;
       margin-right: 37px;
       margin-left: 41px;
-      padding: 33px 0;
+      padding-top: 33px;
       padding-left: 41px;
       border: 1px solid #e6e6e6;
     }
@@ -144,31 +143,23 @@
     width: 280px;
     min-width: 280px;
     word-wrap: break-word;
-
-    &:not(:last-child) {
-      margin-bottom: 26px;
-    }
+    padding-bottom: 26px;
 
     @media (min-width: $tablet) {
       width: auto;
       max-width: 515px;
+      padding-bottom: 33px;
     }
 
     @media (min-width: $desktop) {
       max-width: 470px;
     }
 
-    &:nth-child(1) {
-      @media (min-width: $tablet) {
-        margin-bottom: 33px;
-      }
-    }
-
     &:nth-child(2) {
-      margin-bottom: 23px;
+      padding-bottom: 23px;
 
       @media (min-width: $tablet) {
-        margin-bottom: 32px;
+        padding-bottom: 32px;
       }
     }
   }
